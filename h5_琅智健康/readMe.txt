@@ -1,0 +1,7 @@
+此项目是公司的整个APP项目开发
+com/html/other/template.html是模板html
+
+com代表的是公用代码 包括js、css、html
+liliao代表的是智能理疗床垫的功能
+young代表的是青少年床垫代表的功能
+gs代表的格桑老师的内容

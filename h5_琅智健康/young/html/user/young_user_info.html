@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>使用者信息</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" href="../../../com/css/min/mui.min.css">
+		<link rel="stylesheet" href="../../../com/css/other/com.css">
+		<link rel="stylesheet" href="../../../com/css/min/mui.picker.min.css">
+		<link rel="stylesheet" href="../../css/other/young.com.css">
+	</head>
+
+	<body id="body_id">
+		<div id="com_body">
+			<ul class="mui-table-view" id="self_info">
+				<li class="mui-table-view-cell name">
+					<a id="name" title="input" class="mui-navigate-right letter_s">
+						<em class="si_em">姓名</em>
+						<span class="si_span"></span>
+					</a>
+				</li>
+				<li class="mui-table-view-cell gender">
+					<a id="sex" title="radio" class="mui-navigate-right letter_s">
+						<em class="si_em">性别</em>
+						<span class="si_span"></span>
+					</a>
+				</li>
+				<li class="mui-table-view-cell data_of_birth" data-options='{"type":"date","beginYear":1980,"endYear":2017}'>
+					<a id="birth" title="date" class="mui-navigate-right">
+						出生日期
+						<span class="si_span"></span>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</body>
+
+	<script src="../../../com/js/min/mui.min.js"></script>
+	<script src="../../../com/js/min/mui.pullToRefresh.js"></script>
+	<script src="../../../com/js/min/mui.picker.min.js"></script>
+	<script src="../../../com/js/other/data.js"></script>
+	<script src="../../../com/js/min/md5.js"></script>
+	<script src="../../../com/js/other/com.js"></script>
+	<script src="../../js/other/young.com.js"></script>
+	<script src="../../js/user/young.user.info.js"></script>
+	<script type="text/javascript">
+		NOW = YOUNG;
+		YOUNG.nav.id = 'young_user_info';
+		URL.https = 'http://www.lesmarthome.com'; //请求网址前缀
+		if(DEBUG) console.log('==========调用 YOUNG_USER_INFO.start');
+		mui.plusReady(YOUNG_USER_INFO.start);
+//		if(!window.plus){
+//			YOUNG_USER_INFO.start();
+//		}
+	</script>
+</html>

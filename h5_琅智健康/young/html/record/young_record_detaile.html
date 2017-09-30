@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>睡眠记录详情</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" href="../../../com/css/min/mui.min.css">
+		<link rel="stylesheet" href="../../../com/css/other/com.css">
+		<link rel="stylesheet" href="../../css/other/young.com.css">
+		<style>
+			#com_body:after {
+				height: 0;
+			}
+		</style>
+	</head>
+
+	<body id="body_id">
+		<div id="com_body">
+			<div id="yrd_box">
+				<ul class="mui-table-view">
+					<li class="mui-table-view-cell" id="yrd_date">
+						<span>睡眠日期：</span>
+						<span title="-1" class="mui-icon mui-icon-back"></span>
+						<span></span>
+						<span title="1" class="mui-icon mui-icon-forward"></span>
+					</li>
+					<li class="mui-table-view-cell" id="yrd_start_time">
+						<span>上床时间：</span>
+						<span></span>
+					</li>
+					<li class="mui-table-view-cell" id="yrd_asleep_time">
+						<span>入睡时间：</span>
+						<span></span>
+					</li>
+					<li class="mui-table-view-cell" id="yrd_awake_time">
+						<span>醒来时间：</span>
+						<span></span>
+					</li>
+					<li class="mui-table-view-cell" id="yrd_end_time">
+						<span>离床时间：</span>
+						<span></span>
+					</li>
+					<li class="mui-table-view-cell">
+						<span>睡眠效率：</span>
+						<span id="yrd_efficiency">获取中</span>
+					</li>
+				</ul>
+				<div class="y-box">
+					<div id="yrb_stage">
+						
+					</div>
+				</div>
+				<div class="y-box">
+					<div id="yrb_statics">
+						
+					</div>
+				</div>
+				<div class="y-box" style="padding: 0;">
+					<div id="heart_grid"></div>
+				</div>
+			</div>
+		</div>
+		<header id="com_header" class="mui-bar mui-bar-nav">
+			<h1 class="mui-title">详情</h1>
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left elem-click">记录</a>
+			<button title="home" class="mui-btn mui-btn-blue mui-btn-link mui-pull-right elem-click">主页</button>
+		</header>
+	</body>
+
+	<script src="../../../com/js/min/mui.min.js"></script>
+	<script src="../../../com/js/min/echarts.min.js"></script>
+	<script src="../../../com/js/min/mui.pullToRefresh.js"></script>
+	<script src="../../../com/js/other/data.js"></script>
+	<script src="../../../com/js/min/md5.js"></script>
+	<script src="../../../com/js/other/com.js"></script>
+	<script src="../../js/other/young.com.js"></script>
+	<script src="../../js/record/young.record.detaile.js"></script>
+	<script type="text/javascript">
+		NOW = YOUNG;
+		YOUNG.nav.id = 'young_record';
+		mui.plusReady(Y_RECORD_DETAILE.start);
+		//		if(!window.plus) {
+//		Y_RECORD_DETAILE.start();
+		//		}
+	</script>
+
+</html>

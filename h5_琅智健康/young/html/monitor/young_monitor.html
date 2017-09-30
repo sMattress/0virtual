@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>睡眠监控</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" href="../../../com/css/min/mui.min.css">
+		<link rel="stylesheet" href="../../../com/css/other/com.css">
+		<link rel="stylesheet" href="../../css/other/young.com.css">
+		
+		<style>
+			.ss-legend>li{
+				margin-right: 31px;
+			}
+		</style>
+	</head>
+
+	<body id="body_id">
+		<div id="com_body">
+			<div class="y-box" id="test_div" style="display: none;">
+				<h4>此处为测试按钮</h4>
+				<div class="mui-btn mui-btn-primary">监控结束</div>
+				<div class="mui-btn mui-btn-primary">结束计算</div>
+			</div>
+			<div class="y-box" id="yb_error" style="display: none;">
+				获取数据失败，请下拉刷新试试。
+			</div>
+			<div class="y-box" id="yb_counting" style="display: none;">
+				监测到您已起床啦，正在为您计算出昨晚的睡眠结果。
+			</div>
+			<div class="y-box" id="yb_counting_over" style="display: none;">
+				您之前的睡眠的结果已经计算出来了啦，可以点击 <a>这里</a> 进行查看。
+			</div>
+			
+			<ul id="y_monitor" class="mui-table-view">
+				<div class="ym-show-heart">
+					
+				</div>
+				<div class="ym-show-time">
+					刷新中
+					<!--<span>30</span>秒
+					<br />后刷新-->
+				</div>
+				<div class="ym-show-refresh">
+					<span class="mui-icon mui-icon-loop" style="color: #CF2D28;"></span><br />立即刷新
+				</div>
+				<div class="ym-show-state" style="height: 150px;padding-top: 100px;">
+					<!--22:10 <span>上床了</span>-->
+				</div>
+				<!--<li class="mui-table-view-cell">
+					<span>刷新时间：</span>
+					<span id="ym_time">获取中</span>
+				</li>
+				<li class="mui-table-view-cell">
+					<span>睡眠状态：</span>
+					<span id="ym_state">获取中</span>
+				</li>
+				<li class="mui-table-view-cell">
+					<span>心率：</span>
+					<span id="ym_heart" class="y-heart">0</span>
+				</li>-->
+			</ul>
+			<div class="y-box" id="yb_stage_box" style="overflow: hidden;display: none;">
+				<li class="mui-table-view-cell" id="yb_stage">
+					<span>实时:</span>
+					<div class="mui-switch mui-switch-blue" id="real_time_monitor">
+						<div class="mui-switch-handle"></div>
+					</div>
+				</li>
+				<div id="ys_box" class="ss-box">
+
+				</div>
+				<div class="ss-time">
+					<span id="ys_start" class="c-left"></span>
+					<span id="ys_now" class="c-right"></span>
+				</div>
+				<ul class="ss-legend">
+					<li>
+						<i class="ssl-waking"></i>
+						<span>觉醒</span>
+					</li>
+					<li>
+						<i class="ssl-sleeping"></i>
+						<span>睡眠</span>
+					</li>
+					<li>
+						<i class="ssl-movement"></i>
+						<span>体动</span>
+					</li>
+					<li>
+						<i class="ssl-leaving"></i>
+						<span>离床</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!--<header id="com_header" class="mui-bar mui-bar-nav">
+			<h1 class="mui-title"></h1>
+			<button title="home" class="mui-btn mui-btn-blue mui-btn-link mui-pull-right">主页</button>
+		</header>
+		<nav id="com_nav" class="mui-bar mui-bar-tab">
+			<a class="nav-hover" goHref="monitor/young_monitor.html" title="young_monitor">
+				<span class="mui-icon mui-icon-gear"></span>
+				<span class="mui-tab-label">睡眠监控</span>
+			</a>
+			<a goHref="record/young_record.html" title="young_record">
+				<span class="mui-icon mui-icon-paperplane"></span>
+				<span class="mui-tab-label">睡眠记录</span>
+			</a>
+			<a goHref="user/young_user_info.html" title="young_user_info">
+				<span class="mui-icon mui-icon-person"></span>
+				<span class="mui-tab-label">使用者信息</span>
+			</a>
+		</nav>-->
+	</body>
+
+	<script src="../../../com/js/min/mui.min.js"></script>
+	<script src="../../../com/js/min/echarts.min.js"></script>
+	<script src="../../../com/js/min/mui.pullToRefresh.js"></script>
+	<script src="../../../com/js/other/data.js"></script>
+	<script src="../../../com/js/min/md5.js"></script>
+	<script src="../../../com/js/other/com.js"></script>
+	<script src="../../js/other/young.com.js"></script>
+	<script src="../../js/monitor/young.monitor.js"></script>
+	<script type="text/javascript">
+		NOW = YOUNG;
+		YOUNG.nav.id = 'young_monitor';
+		mui.plusReady(Y_MONITOR.start);
+	</script>
+
+</html>

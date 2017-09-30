@@ -1,0 +1,320 @@
+body {
+	font-size: 16px;
+}
+
+ul,
+li {
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	list-style: none;
+}
+
+
+/**
+ * 睡眠数据图
+ */
+
+#y_monitor {
+	margin-top: 15px;
+	padding-left: 15px;
+}
+#y_monitor .mui-table-view-cell:after {
+	left: 0;
+}
+#yb_stage {
+	padding: 10px 0;
+}
+
+#yb_stage:after {
+	left: 0;
+}
+
+#yb_stage .mui-switch {
+	right: 0;
+	left: 75px;
+}
+
+/*#yb_stage .mui-switch:before {
+	top: -5px;
+}*/
+
+#yb_stage .mui-switch-blue.mui-active {
+	border: 2px solid #d1917b;
+	background-color: #d1917b;
+}
+
+#y_monitor>li {
+	list-style: none;
+	padding: 0;
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+}
+
+#y_monitor>li>img {
+	display: inline-block;
+	float: left;
+	width: 30px;
+	height: 30px;
+	margin-right: 5px;
+}
+
+#y_monitor>li>span {
+	display: inline-block;
+	float: left;
+}
+
+#y_monitor>li>.sleeping {
+	color: #77a9ae;
+	text-indent: 33px;
+	background: url(../../img/monitor/yi-2.png) no-repeat top left;
+	background-size: 30px;
+}
+
+#y_monitor>li>.waking {
+	color: #c35652;
+	text-indent: 33px;
+	background: url(../../img/monitor/yi-1.png) no-repeat top left;
+	background-size: 30px;
+}
+
+#y_monitor>li>.leaving {
+	color: #51626e;
+	text-indent: 33px;
+	background: url(../../img/monitor/yi-5.png) no-repeat top left;
+	background-size: 30px;
+}
+
+.y-heart {
+	background-image: url(../../img/monitor/heart-icon.png);
+	background-position: center right;
+	background-repeat: no-repeat;
+	color: #fff;
+	width: 40px;
+	height: 40px;
+	background-size: 40px;
+	text-align: center;
+	/*margin-top: 5px;*/
+	/*line-height: 40px;*/
+}
+
+.ss-box {
+	height: 40px;
+	line-height: 40px;
+	/*border-bottom: 1px solid #c8c7cc;*/
+}
+
+.ss-box>i {
+	display: block;
+	float: left;
+	height: 40px;
+	width: 25%;
+}
+
+.ss-box>.sb-sleeping {
+	background-color: #77a9ae;
+}
+
+.ss-box>.sb-waking {
+	background-color: #c35652;
+}
+
+.ss-box>.sb-leaving {
+	background-color: #51626e;
+}
+
+.ss-box>.sb-movement {
+	background-color: #9dc6b3;
+}
+
+.ss-time {
+	height: 40px;
+}
+
+.ss-time>span {
+	display: block;
+	height: 40px;
+	line-height: 40px;
+}
+
+.ss-legend {
+	width: 320px;
+	height: 30px;
+}
+
+.ss-legend>li {
+/*	width: 25%;*/
+	height: 100%;
+	float: left;
+	margin-right: 11px;
+}
+
+.ss-legend>li>span {
+	display: block;
+	float: left;
+	height: 30px;
+	line-height: 30px;
+	font-size: 16px;
+}
+
+.ss-legend>li>i {
+	display: block;
+	float: left;
+	width: 16px;
+	height: 16px;
+	margin: 7px 0;
+}
+
+.ss-legend>li>.ssl-sleeping {
+	background-color: #77a9ae;
+}
+
+.ss-legend>li>.ssl-waking {
+	background-color: #c35652;
+}
+
+.ss-legend>li>.ssl-leaving {
+	background-color: #51626e;
+}
+
+.ss-legend>li>.ssl-movement {
+	background-color: #9dc6b3;
+}
+
+.y-box>.yb-echarts{
+	height: 300px;
+}
+
+.y-title {
+	margin-top: 15px;
+	margin-bottom: -10px;
+	text-indent: 15px;
+}
+
+.y-box {
+	background-color: #fff;
+	margin-top: 15px;
+	padding: 0 15px;
+	border-top: 1px solid #c8c7cc;
+	border-bottom: 1px solid #c8c7cc;
+}
+
+#heart_grid,#yrb_stage {
+	height: 300px;
+}
+
+
+#yr_search{
+	border-bottom: 1px solid #c8c7cc;
+	margin: 4px 0;
+}
+#yr_search button{
+	padding: 6px 0;
+}
+#yr_title{
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+/*单条睡眠记录详情*/
+#yrd_box{
+	margin-bottom: 15px;
+}
+#yrd_box>.mui-table-view{
+	margin-top: 15px;
+    padding-left: 15px;
+}
+#yrd_box>.mui-table-view>.mui-table-view-cell{
+	list-style: none;
+    padding: 0;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+}
+#yrd_box .mui-table-view-cell:after{
+	left: 0;
+}
+
+#yrd_box h4{
+	border-bottom: 1px solid #c8c7cc;
+	padding: 10px 0;
+}
+
+#yrd_efficiency{
+	height: 40px;
+	line-height: 40px;
+}
+#yrb_statics{
+	height: 250px;
+}
+
+#yb_counting,#yb_counting_over,#yb_error{
+	line-height: 30px;
+}
+
+#yrd_date>.mui-icon{
+	color: #007aff;
+}
+
+#yrb_none{
+	line-height: 40px;
+}
+
+#y_monitor{
+	height: 150px;
+}
+.ym-show-heart{
+	position: absolute;
+	color: #fff;
+	left: 50%;
+	top: 0;
+	width: 100px;
+	height: 100px;
+	line-height: 100px;
+	text-align: center;
+	font-size: 30px;
+	font-weight: bolder;
+	margin-left: -50px;
+	background-size: 100px;
+	background-image: url(../../img/monitor/heart-icon.png);
+    background-position: center right;
+    background-repeat: no-repeat;
+}
+.ym-show-time{
+	position: absolute;
+	left: 0px;
+	top: 20px;
+	width: 100px;
+	height: 60px;
+	line-height: 30px;
+	text-align: center;
+}
+.ym-show-time>span{
+	color: #CF2D28;
+}
+.ym-show-refresh{
+	position: absolute;
+	right: 0px;
+	top: 20px;
+	width: 100px;
+	height: 60px;
+	line-height: 30px;
+	text-align: center;
+}
+
+.ym-show-state{
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	color: #999;
+}
+.ym-show-state>span{
+	color: deepskyblue;
+	font-weight: bold;
+}

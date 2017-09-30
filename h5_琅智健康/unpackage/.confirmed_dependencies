@@ -1,0 +1,456 @@
+{
+  "liliao/html/device/liliao_device.html": {
+    "resources": [
+      "liliao/img/device/rt_n.png",
+      "liliao/img/com/com_bg.png",
+      "liliao/js/device/liliao.device.js",
+      "liliao/img/device/rb_n.png",
+      "liliao/img/device/t_bg.png",
+      "liliao/img/device/rc_show.png",
+      "liliao/css/other/liliao.device.css",
+      "liliao/img/device/hrs.png",
+      "liliao/img/device/lt_n.png",
+      "liliao/js/other/liliao.com.js",
+      "com/js/other/Mysocket.js",
+      "liliao/img/device/lb_n.png",
+      "liliao/img/device/cc_n.png",
+      "com/js/min/mui.picker.min.js",
+      "liliao/img/device/cc_h.png",
+      "com/css/min/mui.picker.min.css",
+      "com/js/other/data.js",
+      "com/js/min/mui.pullToRefresh.js",
+      "com/js/min/md5.js",
+      "com/css/min/mui.min.css",
+      "com/js/min/mui.min.js",
+      "com/js/other/com.js",
+      "com/css/other/com.css",
+      "com/fonts/mui.ttf",
+      "com/js/other/my.socket.js",
+      "liliao/img/device/rt_h.png",
+      "liliao/img/device/rb_h.png"
+    ],
+    "refer": [
+      "liliao/html/help/liliao_help.html"
+    ]
+  },
+  "com/html/other/home.html": {
+    "resources": [
+      "com/img/other/tmp/yuantiao.jpg",
+      "com/img/other/tmp/cbd.jpg",
+      "com/js/other/home.js",
+      "com/img/other/tmp/muwu.jpg",
+      "com/img/other/tmp/logo.png",
+      "com/img/other/tmp/shuijiao.jpg",
+      "com/js/other/data.js",
+      "com/fonts/mui.ttf",
+      "com/js/min/md5.js",
+      "com/css/min/mui.min.css",
+      "com/js/min/mui.min.js",
+      "com/js/other/com.js",
+      "com/css/other/com.css",
+      "com/js/other/device.js",
+      "gs/audio/20170701/Approaching Nirvana - You.mp3",
+      "gs/audio/20170701/Tobu - Life.mp3",
+      "gs/audio/20170701/TheFatRat - Unity.mp3",
+      "com/img/other/logo-2.png",
+      "com/img/other/logo-1.png",
+      "com/img/other/device_new.png",
+      "com/img/other/device_old.png"
+    ],
+    "refer": [
+      "liliao/html/device/liliao_device.html",
+      "young/html/monitor/young_monitor.html",
+      "com/html/other/device.html",
+      "com/html/other/self.html",
+      "com/html/other/device_add_android.html"
+    ]
+  },
+  "liliao/html/help/liliao_help.html": {
+    "resources": [
+      "liliao/img/com/com_logo.png",
+      "com/fonts/mui.ttf",
+      "liliao/js/other/liliao.com.js",
+      "com/img/other/lz-logo.png",
+      "com/img/other/lxzj-logo.png"
+    ],
+    "refer": [
+      "liliao/html/help/liliao_help_download.html",
+      "liliao/html/help/liliao_add_device.html",
+      "liliao/html/help/liliao_remote_control.html",
+      "liliao/html/help/liliao_heating_reservation.html",
+      "liliao/html/help/liliao_physiotherapy_appointment.html",
+      "liliao/html/help/liliao_common_problem.html",
+      "liliao/html/help/liliao_far_infrared.html",
+      "liliao/html/help/liliao_IT_curve.html",
+      "com/html/other/device.html",
+      "liliao/html/device/liliao_device.html"
+    ]
+  },
+  "young/html/monitor/young_monitor.html": {
+    "resources": [
+      "com/js/min/md5.js",
+      "com/js/other/data.js",
+      "young/css/other/young.com.css",
+      "com/css/min/mui.min.css",
+      "com/js/min/echarts.min.js",
+      "com/js/min/mui.min.js",
+      "com/js/other/com.js",
+      "young/js/other/young.com.js",
+      "com/fonts/mui.ttf",
+      "com/js/min/mui.pullToRefresh.js",
+      "com/css/other/com.css",
+      "young/js/monitor/young.monitor.js",
+      "young/img/monitor/yi-4.png",
+      "young/img/monitor/yi-3.png",
+      "young/img/monitor/yi-1.png",
+      "young/img/monitor/yi-2.png",
+      "com/fonts/mui-icons-extra.ttf",
+      "young/img/monitor/heart-icon.png",
+      "young/img/monitor/yi-5.png"
+    ],
+    "refer": [
+      "com/html/other/home.html",
+      "young/html/record/young_record.html",
+      "young/html/report/young_report.html",
+      "young/html/record/young_record_detaile.html",
+      "young/html/user/young_user_info.html"
+    ]
+  },
+  "liliao/html/help/liliao_help_download.html": {
+    "resources": [
+      "com/js/min/mui.zoom.js",
+      "liliao/img/help/i_1.png",
+      "com/css/min/mui.previewimage.css",
+      "com/js/min/mui.previewimage.js"
+    ],
+    "refer": []
+  },
+  "liliao/html/help/liliao_add_device.html": {
+    "resources": [
+      "liliao/img/help/i_2.png",
+      "liliao/img/help/i_4.png",
+      "liliao/img/help/i_5.png",
+      "liliao/img/help/i_3.png",
+      "liliao/img/help/i_6.png"
+    ],
+    "refer": []
+  },
+  "liliao/html/help/liliao_remote_control.html": {
+    "resources": [
+      "liliao/img/help/i3_1.png",
+      "com/js/min/mui.zoom.js",
+      "liliao/img/help/device_management.png",
+      "com/css/min/mui.previewimage.css",
+      "com/js/min/mui.previewimage.js",
+      "com/js/other/data.js",
+      "com/css/min/mui.min.css",
+      "com/js/min/mui.min.js",
+      "com/js/other/com.js",
+      "liliao/js/other/liliao.com.js",
+      "com/fonts/mui.ttf",
+      "com/css/other/com.css"
+    ],
+    "refer": []
+  },
+  "liliao/html/help/liliao_heating_reservation.html": {
+    "resources": [
+      "liliao/img/help/i4_1.png",
+      "liliao/img/help/heating_reservation.png"
+    ],
+    "refer": []
+  },
+  "liliao/html/help/liliao_physiotherapy_appointment.html": {
+    "resources": [
+      "liliao/img/help/i5_1.png",
+      "liliao/img/help/Physiotherapy_appointment.png"
+    ],
+    "refer": []
+  },
+  "liliao/html/help/liliao_far_infrared.html": {
+    "resources": [
+      "liliao/img/help/i7_1.jpg"
+    ],
+    "refer": []
+  },
+  "liliao/html/help/liliao_IT_curve.html": {
+    "resources": [
+      "liliao/img/help/i8_1.jpg"
+    ],
+    "refer": []
+  },
+  "com/html/other/device.html": {
+    "resources": [
+      "com/js/min/qrcode.js",
+      "com/img/other/device_new.png",
+      "com/js/other/device.js",
+      "com/img/other/device_old.png",
+      "com/js/min/md5.js",
+      "com/js/other/data.js",
+      "com/css/min/mui.min.css",
+      "com/js/min/mui.min.js",
+      "com/js/other/com.js",
+      "com/fonts/mui.ttf",
+      "com/css/other/com.css",
+      "com/img/other/logo-2.png",
+      "com/js/min/mui.pullToRefresh.js",
+      "com/img/other/logo-1.png"
+    ],
+    "refer": [
+      "liliao/html/device/liliao_device.html",
+      "young/html/monitor/young_monitor.html",
+      "com/html/other/LR.html",
+      "com/html/other/device_add_help.html",
+      "com/html/other/device_add_android.html",
+      "com/html/other/home.html"
+    ]
+  },
+  "com/html/other/self.html": {
+    "resources": [
+      "com/img/other/person_background.png",
+      "com/js/min/mui.view.js",
+      "com/img/other/LR_logo.png",
+      "com/js/other/self.js",
+      "com/js/min/md5.js",
+      "com/js/other/data.js",
+      "com/css/min/mui.min.css",
+      "com/js/min/mui.min.js",
+      "com/js/other/com.js",
+      "com/fonts/mui.ttf",
+      "com/css/other/com.css"
+    ],
+    "refer": [
+      "com/html/other/LR.html",
+      "com/html/other/device.html",
+      "com/html/other/self_info.html"
+    ]
+  },
+  "com/html/other/LR.html": {
+    "resources": [
+      "com/js/other/LR.js",
+      "com/img/other/com_bg.png",
+      "com/img/other/LR_logo.png",
+      "com/js/min/md5.js",
+      "com/js/other/data.js",
+      "com/css/min/mui.min.css",
+      "com/js/other/device.js",
+      "com/js/min/mui.min.js",
+      "com/js/other/com.js",
+      "com/fonts/mui.ttf",
+      "com/css/other/com.css"
+    ],
+    "refer": [
+      "com/html/other/home.html"
+    ]
+  },
+  "young/html/record/young_record.html": {
+    "resources": [
+      "young/js/record/young.record.js",
+      "com/js/min/md5.js",
+      "com/js/other/data.js",
+      "young/css/other/young.com.css",
+      "com/css/min/mui.min.css",
+      "com/js/min/mui.min.js",
+      "com/js/other/com.js",
+      "young/js/other/young.com.js",
+      "com/fonts/mui.ttf",
+      "com/css/other/com.css",
+      "young/js/monitor/young.monitor.js",
+      "com/js/min/echarts.min.js",
+      "com/js/min/mui.pullToRefresh.js",
+      "com/fonts/mui-icons-extra.ttf"
+    ],
+    "refer": [
+      "young/html/record/young_record_detaile.html",
+      "young/html/monitor/young_monitor.html",
+      "com/html/other/home.html",
+      "young/html/knowledge/young_knowledge.html",
+      "young/html/report/young_report.html",
+      "young/html/user/young_user_info.html"
+    ]
+  },
+  "young/html/record/young_record_detaile.html": {
+    "refer": [
+      "com/html/other/home.html",
+      "young/html/record/young_record.html"
+    ],
+    "resources": [
+      "com/js/min/md5.js",
+      "com/js/other/data.js",
+      "young/css/other/young.com.css",
+      "com/css/min/mui.min.css",
+      "com/js/min/mui.min.js",
+      "com/js/other/com.js",
+      "young/js/other/young.com.js",
+      "young/js/record/young.record.js",
+      "com/css/other/com.css",
+      "young/js/monitor/young.monitor.js",
+      "com/fonts/mui.ttf",
+      "com/js/min/echarts.min.js",
+      "young/js/record/young.record.detaile.js",
+      "com/js/min/mui.pullToRefresh.js"
+    ]
+  },
+  "young/html/report/young_report.html": {
+    "resources": [
+      "com/js/min/md5.js",
+      "com/js/other/data.js",
+      "young/css/other/young.com.css",
+      "com/css/min/mui.min.css",
+      "young/js/report/young.report.js",
+      "com/js/min/echarts.min.js",
+      "com/js/min/mui.min.js",
+      "com/js/other/com.js",
+      "com/fonts/mui-icons-extra.ttf",
+      "young/js/other/young.com.js",
+      "com/fonts/mui.ttf",
+      "com/css/other/com.css"
+    ],
+    "refer": [
+      "young/html/record/young_record.html"
+    ]
+  },
+  "com/html/other/testUdp.html": {
+    "resources": [
+      "com/js/min/mui.min.js"
+    ],
+    "refer": []
+  },
+  "com/html/other/device_add_help.html": {
+    "resources": [
+      "com/js/other/wifi.js",
+      "com/js/other/data.js",
+      "com/js/other/device.add.js",
+      "com/css/min/mui.min.css",
+      "com/js/min/mui.min.js",
+      "com/js/other/com.js",
+      "com/fonts/mui.ttf",
+      "com/css/other/com.css",
+      "com/js/other/device.js",
+      "com/js/min/md5.js"
+    ],
+    "refer": [
+      "com/html/other/home.html",
+      "com/html/other/device.html"
+    ]
+  },
+  "com/html/other/device_add.html": {
+    "resources": [
+      "com/js/min/md5.js",
+      "com/js/other/data.js",
+      "com/css/min/mui.min.css",
+      "com/js/other/device.js",
+      "com/js/min/mui.min.js",
+      "com/js/other/com.js",
+      "com/js/min/mui.pullToRefresh.js",
+      "com/css/other/com.css",
+      "com/js/other/wifi.js",
+      "com/js/other/device.add.js",
+      "com/fonts/mui.ttf"
+    ],
+    "refer": []
+  },
+  "com/html/other/device_add_android.html": {
+    "resources": [
+      "com/js/other/wifi.js",
+      "com/js/min/md5.js",
+      "com/js/other/data.js",
+      "com/css/min/mui.min.css",
+      "com/js/other/device.add.android.js",
+      "com/js/other/device.js",
+      "com/js/min/mui.min.js",
+      "com/js/other/com.js",
+      "com/fonts/mui.ttf",
+      "com/css/other/com.css"
+    ],
+    "refer": [
+      "com/html/other/LR.html",
+      "com/html/other/home.html",
+      "com/html/other/device.html",
+      "com/html/other/device_user_info.html"
+    ]
+  },
+  "com/html/other/device_add_ios.html": {
+    "resources": [
+      "com/js/min/md5.js",
+      "com/js/other/data.js",
+      "com/css/min/mui.min.css",
+      "com/js/other/device.add.ios.js",
+      "com/js/other/device.js",
+      "com/js/min/mui.min.js",
+      "com/js/other/com.js",
+      "com/fonts/mui.ttf",
+      "com/css/other/com.css"
+    ],
+    "refer": []
+  },
+  "com/html/other/tmp.html": {
+    "resources": [
+      "com/js/min/md5.js",
+      "com/js/other/data.js",
+      "com/css/min/mui.min.css",
+      "com/js/min/mui.min.js",
+      "com/js/other/com.js",
+      "com/js/other/self.js",
+      "com/css/other/com.css",
+      "com/js/min/mui.pullToRefresh.js",
+      "com/js/other/device.js"
+    ],
+    "refer": [
+      "com/html/other/device_add_android.html",
+      "com/html/other/home.html",
+      "com/html/other/LR.html"
+    ]
+  },
+  "com/html/other/self_info.html": {
+    "resources": [
+      "com/js/min/mui.picker.min.js",
+      "com/css/min/mui.picker.min.css",
+      "com/img/other/right.png"
+    ],
+    "refer": []
+  },
+  "young/html/user/young_user_info.html": {
+    "resources": [
+      "com/js/min/md5.js",
+      "com/js/other/data.js",
+      "young/css/other/young.com.css",
+      "com/css/min/mui.min.css",
+      "com/js/min/mui.min.js",
+      "com/js/other/com.js",
+      "young/js/other/young.com.js",
+      "com/fonts/mui.ttf",
+      "com/css/other/com.css",
+      "young/js/user/young.user.info.js",
+      "com/js/min/mui.pullToRefresh.js",
+      "com/img/other/right.png",
+      "com/js/min/mui.picker.min.js",
+      "com/css/min/mui.picker.min.css"
+    ],
+    "refer": [
+      "young/html/record/young_record.html",
+      "young/html/monitor/young_monitor.html",
+      "com/html/other/home.html",
+      "com/html/other/LR.html"
+    ]
+  },
+  "com/html/other/device_user_info.html": {
+    "resources": [
+      "com/js/min/md5.js",
+      "com/js/other/data.js",
+      "com/js/min/mui.picker.min.js",
+      "com/css/min/mui.min.css",
+      "com/js/other/device.user.info.js",
+      "com/js/min/mui.min.js",
+      "com/js/other/com.js",
+      "com/css/min/mui.picker.min.css",
+      "com/fonts/mui.ttf",
+      "com/css/other/com.css",
+      "com/img/other/right.png",
+      "com/js/other/device.js"
+    ],
+    "refer": [
+      "com/html/other/LR.html",
+      "com/html/other/device.html"
+    ]
+  }
+}

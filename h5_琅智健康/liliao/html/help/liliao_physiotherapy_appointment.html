@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>理疗预约</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" href="../../../com/css/min/mui.min.css">
+		<link rel="stylesheet" href="../../../com/css/min/mui.previewimage.css" />
+		<link rel="stylesheet" href="../../../com/css/other/com.css">
+		<style>
+			h1,
+			h2,
+			h3,
+			h4,
+			h5 {
+				margin: 20px;
+			}
+			
+			p {
+				line-height: 1.4rem;
+				font-size: 1rem;
+				color: #000;
+				font-family: initial;
+				padding: 0 10px;
+				text-indent: 2rem;
+			}
+			
+			ul,
+			li {
+				margin: 0;
+				padding: 0;
+			}
+			
+			img {
+				display: block;
+				max-width: 95%;
+				margin: 10px auto;
+				width: 220px;
+				height: 391px;
+			}
+		</style>
+	</head>
+
+	<body id="body_id">
+		<div id="com_body">
+			<h2>理疗预约</h2>
+			<p> 一周七天，每天可预约不同时间点，和加热温度。如需取消，在APP加热预约界面，取消预约即可
+			</p>
+			<ol>
+				<li><strong>理疗时长：</strong>设置一次理疗的时间长度；
+					<p>可设置时间的区间为15-120分钟，理疗时间不宜过长。</p>
+				</li>
+				<li><strong>允许理疗时段：</strong>设置床垫开启理疗的起始时间和截止时间；
+					<p>床垫在此时间段内，自动探测是否有人在床垫上。若在此时间段内您已上床，则开启理疗功能；否则将不开启理疗功能。</p>
+				</li>
+			</ol>
+			<img src="../../img/help/Physiotherapy_appointment.png" data-preview-src="" data-preview-group="1" alt="">
+		</div>
+	</body>
+	<script src="../../../com/js/min/mui.min.js"></script>
+	<script src="../../../com/js/min/mui.zoom.js"></script>
+	<script src="../../../com/js/min/mui.previewimage.js"></script>
+	<script src="../../../com/js/other/data.js"></script>
+	<script src="../../../com/js/other/com.js"></script>
+	<script src="../../js/other/liliao.com.js"></script>
+	<script type="text/javascript">
+		NOW = LILIAO;
+		LILIAO.nav.id = 'liliao_help';
+		mui.plusReady(function() { 
+			mui.previewImage && mui.previewImage();
+			COM.addHN(true, '理疗预约', CONST_MENU.home);
+		});
+	</script>
+
+</html>

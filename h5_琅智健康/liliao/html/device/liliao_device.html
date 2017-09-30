@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>理疗设备 设备控制</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" href="../../../com/css/min/mui.min.css">
+		<link rel="stylesheet" href="../../../com/css/min/mui.picker.min.css">
+		<link rel="stylesheet" href="../../../com/css/other/com.css">
+		<link rel="stylesheet" href="../../css/other/liliao.device.css">
+	</head>
+
+	<body id="body_id">
+		<div id="com_body" class="set_body">
+			<div id="slider" class="mui-slider slider_body">
+				<div id="sliderControl" class="mui-slider-indicator mui-segmented-control mui-segmented-control-inverted com-width">
+					<a title="0" class="mui-control-item mui-active" href="#remoteCtrl">远程控制</a>
+					<a title="1" class="mui-control-item" href="#heatRvat">加热预约</a>
+					<a title="2" class="mui-control-item" href="#phyRvat">理疗预约</a>
+				</div>
+				<!--<div id="now_device" class="now_device"></div>-->
+				<div id="slider_group_box" class="mui-slider-group">
+					<div id="remoteCtrl" class="mui-slider-item">
+						<div class="rc_show">
+							<!-- 信息显示区域 采用的是浮动布局 -->
+							<span>左侧</span><span>右侧</span>
+							<li index="0" class="info">获取中</li>
+							<li index="0" class="info">获取中</li>
+							<em index="0" class="info">待机</em>
+							<em index="0" class="info">待机</em>
+						</div>
+						<div class="rc_ctrl">
+							<!-- 控制区域  采用绝对定位布局-->
+							<span index="0" type="1" class="span_lt switch">左加热</span>
+							<span index="1" type="1" class="span_rt switch">右加热</span>
+							<span index="2" type="2" class="span_lb switch">左理疗</span>
+							<span index="3" type="2" class="span_rb switch">右理疗</span>
+							<!-- 内容是图片显示 依次是左上 右上 中间 左下 右下  -->
+							<ul>
+								<li index="4" class="li_lt switch"></li>
+								<li index="5" class="li_rt switch"></li>
+								<li index="6" class="li_cc switch"></li>
+								<li index="7" class="li_lb switch"></li>
+								<li index="8" class="li_rb switch"></li>
+							</ul>
+						</div>
+					</div>
+					<div id="heatRvat" class="mui-slider-item">
+						<ul class="hr_show">
+							<div class="mui-switch" id="hr_switch">
+								<div class="mui-switch-handle"></div>
+							</div>
+							<div id="hr_mark" title="mark" class="mark elem-click"></div>
+							<button id="hr_sure" type="button" title="sure" class="mui-btn mui-btn-success mui-btn-outlined elem-click">确认</button>
+							<div id="hr_side" title="side" class="side elem-click">左侧</div>
+							<li>
+								<div class="hrs_left">
+									<p>适宜</p>
+									<p>温度</p>
+								</div>
+								<div id="hr_tT" title="temperature" class="hrs_right">
+									<button type="button" class="mui-btn change1">-</button>
+									<input type="number" id="hr_change" value="35" min="15" max="120" />
+									<span>°C</span>
+									<button type="button" class="mui-btn change2">+</button>
+								</div>
+							</li>
+							<li>
+								<div class="hrs_left">
+									<p>预约</p>
+									<p>开机时间</p>
+								</div>
+								<div id="hr_time" title="time" class="hrs_right">
+									点击选择
+								</div>
+							</li>
+							<li>
+								<div class="hrs_left">
+									<p>智能</p>
+									<p>温度曲线</p>
+								</div>
+								<div title="line" class="hrs_right">
+									<div id="hr_control" class="mui-switch">
+										<div class="mui-switch-handle"></div>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div id="phyRvat" class="mui-slider-item">
+						<ul class="hr_show">
+							<div class="mui-switch" id="pr_switch">
+								<div class="mui-switch-handle"></div>
+							</div>
+							<div id="pr_mark" title="mark" class="mark elem-click"></div>
+							<button id="pr_sure" type="button" title="sure" class="mui-btn mui-btn-success mui-btn-outlined elem-click">确认</button>
+							<div id="pr_side" title="side" class="side elem-click">左侧</div>
+							<li>
+								<div class="hrs_left">
+									<p>理疗</p>
+									<p>时长</p>
+								</div>
+								<div id="workTime" title="temperature" class="hrs_right">
+									<button type="button" class="mui-btn change1">-</button>
+									<input type="number" id="pr_change" value="45" min="15" max="120" />
+									<span>分钟</span>
+									<button type="button" class="mui-btn change2">+</button>
+								</div>
+							</li>
+							<li>
+								<div class="hrs_left">
+									<p>预约</p>
+									<p>开机时间</p>
+								</div>
+								<div id="pr_time" title="text" class="hrs_right">
+									在预约的时间内床垫会时刻待命，只要您躺在床上，设备会自动开始理疗
+								</div>
+							</li>
+							<li id="pr_se">
+								<div id="startTime" class="pr_time" title="start">点击选择</div>
+								<div id="overTime" class="pr_time" title="end">点击选择</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+
+	<script src="../../../com/js/min/mui.min.js"></script>
+	<script src="../../../com/js/min/mui.picker.min.js"></script>
+	<script src="../../../com/js/other/data.js"></script>
+	<script src="../../../com/js/min/md5.js"></script>
+	<script src="../../../com/js/other/com.js"></script>
+	<script src="../../../com/js/other/my.socket.js"></script>
+	<script src="../../../com/js/min/mui.pullToRefresh.js"></script>
+	<script src="../../js/other/liliao.com.js"></script>
+	<script src="../../js/device/liliao.device.js"></script>
+
+	<script type="text/javascript">
+		var _countHeight = function() {
+			var h = document.body.clientHeight;
+			var sliderH = h - 44 - 50;
+			mui('#slider')[0].style.height = sliderH + 'px';
+			mui('#slider_group_box')[0].style.height = (sliderH - mui('#sliderControl')[0].clientHeight) + 'px';
+		}
+		_countHeight();
+		window.onresize = _countHeight;
+
+		NOW = LILIAO;
+		LILIAO.nav.id = 'liliao_device_list';
+//		COM.addHN(true, '123', CONST_MENU.home, true);
+		mui.plusReady(L_DEVICE.start);
+	</script>
+
+</html>

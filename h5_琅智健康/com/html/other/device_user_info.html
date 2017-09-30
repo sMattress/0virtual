@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>绑定设备使用者信息</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" href="../../css/min/mui.min.css">
+		<link rel="stylesheet" href="../../css/min/mui.picker.min.css">
+		<link rel="stylesheet" href="../../css/other/com.css">
+		<style>
+			.tmp-btn {
+				border: 1px solid #007aff;
+				background-color: #007aff;
+			}
+			.tmp-btn:active{
+				border: 1px solid #0062cc !important;
+				background-color: #0062cc !important;
+			}
+		</style>
+	</head>
+
+	<body id="body_id">
+		<div id="com_body">
+			<ul class="mui-table-view" id="self_info">
+				<li class="mui-table-view-cell name">
+					<a id="name" title="input" class="mui-navigate-right letter_s">
+						<em class="si_em">姓名</em>
+						<span class="si_span"></span>
+					</a>
+				</li>
+				<li class="mui-table-view-cell gender">
+					<a id="sex" title="radio" class="mui-navigate-right letter_s">
+						<em class="si_em">性别</em>
+						<span class="si_span"></span>
+					</a>
+				</li>
+				<li class="mui-table-view-cell data_of_birth" data-options='{"type":"date","beginYear":1980,"endYear":2017}'>
+					<a id="birth" title="date" class="mui-navigate-right">
+						出生日期
+						<span class="si_span"></span>
+					</a>
+				</li>
+				<div style="text-align: center;padding-bottom: 11px;">
+					<button type="button" class="mui-btn mui-btn-success mui-icon mui-icon-plus tmp-btn">保存</button>
+				</div>
+			</ul>
+
+		</div>
+
+	</body>
+	<script src="../../js/min/mui.min.js"></script>
+	<script src="../../js/min/md5.js"></script>
+	<script src="../../js/min/mui.picker.min.js"></script>
+	<script src="../../js/other/data.js"></script>
+	<script src="../../js/other/com.js"></script>
+	<script src="../../js/other/device.js"></script>
+	<script src="../../js/other/device.user.info.js"></script>
+
+	<script type="text/javascript">
+		NOW = COMMON;
+		if(DEBUG) console.log('==========调用 DEVICE_USER_INFO.start');
+		mui.plusReady(DEVICE_USER_INFO.start);
+//		DEVICE_USER_INFO.start();
+		
+	</script>
+
+</html>

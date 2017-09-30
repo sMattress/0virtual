@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>个人信息</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" href="../../css/min/mui.min.css">
+		<link rel="stylesheet" href="../../css/min/mui.picker.min.css">
+		<link rel="stylesheet" href="../../css/other/com.css">
+	</head>
+
+	<body id="body_id">
+		<div id="com_body">
+			<ul class="mui-table-view" id="self_info">
+				<li class="mui-table-view-cell name">
+					<a id="name" title="input" class="mui-navigate-right letter_s">
+						<em class="si_em">姓名</em>
+						<span class="si_span"></span>
+					</a>
+				</li>
+				<li class="mui-table-view-cell gender">
+					<a id="sex" title="radio" class="mui-navigate-right letter_s">
+						<em class="si_em">性别</em>
+						<span class="si_span"></span>
+					</a>
+				</li>
+				<li class="mui-table-view-cell data_of_birth" data-options='{"type":"date","beginYear":1980,"endYear":2017}'>
+					<a id="birthday" title="date" class="mui-navigate-right">
+						出生日期
+						<span class="si_span"></span>
+					</a>
+				</li>
+			</ul>
+		</div>
+		
+	</body>
+	<script src="../../js/min/mui.min.js"></script>
+	<script src="../../js/min/md5.js"></script>
+	<script src="../../js/min/mui.picker.min.js"></script>
+	<script src="../../js/other/data.js"></script>
+	<script src="../../js/other/com.js"></script>
+	<script src="../../js/other/self.js"></script>
+	
+	<script type="text/javascript">
+		NOW = COMMON;
+		mui.plusReady(SELF.selfInfoStart);
+	</script>
+
+</html>

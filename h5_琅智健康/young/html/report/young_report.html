@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>睡眠统计</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" href="../../../com/css/min/mui.min.css">
+		<link rel="stylesheet" href="../../../com/css/other/com.css">
+		<link rel="stylesheet" href="../../css/other/young.com.css">
+	</head>
+
+	<body id="body_id">
+		<div id="com_body">
+			<div id="y_monitor">
+				<div class="y_echarts_box">
+					<!-- 显示饼图 -->
+				</div>
+			</div>
+		</div>
+	</body>
+
+	<script src="../../../com/js/min/mui.min.js"></script>
+	<script src="../../../com/js/min/echarts.min.js" ></script>
+	<script src="../../../com/js/other/data.js"></script>
+	<script src="../../../com/js/min/md5.js"></script>
+	<script src="../../../com/js/other/com.js"></script>
+	<script src="../../js/other/young.com.js"></script>
+	<script src="../../js/report/young.report.js"></script>
+	
+	<script type="text/javascript">
+		NOW = YOUNG;
+		YOUNG.nav.id = 'young_report';
+		mui.plusReady(Y_REPORT.start);
+		if(!window.plus){
+//			Y_REPORT.start();
+		}
+	</script>
+
+</html>
