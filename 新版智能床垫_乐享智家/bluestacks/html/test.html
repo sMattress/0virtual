@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+	</body>
+	<script type="text/javascript">
+		var a = function(){
+			
+		}
+		a.prototype.test = function(){
+			var _t = function(){
+				console.log(this);
+			}
+			
+			_t();
+		}
+		var b = new a();
+		b.test();
+		
+		window._t();
+	</script>
+</html>

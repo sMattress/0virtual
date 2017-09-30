@@ -1,0 +1,6 @@
+framework module Pods_SmartMattress {
+  umbrella header "Pods-SmartMattress-umbrella.h"
+
+  export *
+  module * { export * }
+}

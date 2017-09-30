@@ -1,0 +1,1112 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3D0CE8CB1DFFBF53001B77AE /* WTFWiFiConfigController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D0CE8C91DFFBF53001B77AE /* WTFWiFiConfigController.m */; };
+		3D0CE8CC1DFFBF53001B77AE /* WTFWiFiConfigController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D0CE8CA1DFFBF53001B77AE /* WTFWiFiConfigController.xib */; };
+		3D0CE8D01DFFC55C001B77AE /* WTFLoadingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D0CE8CE1DFFC55C001B77AE /* WTFLoadingViewController.m */; };
+		3D0CE8D11DFFC55C001B77AE /* WTFLoadingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D0CE8CF1DFFC55C001B77AE /* WTFLoadingViewController.xib */; };
+		3D0CE8D31DFFC825001B77AE /* loading.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3D0CE8D21DFFC825001B77AE /* loading.gif */; };
+		3D10B0251E20A218003B4885 /* WTFKnowledgeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D10B0231E20A218003B4885 /* WTFKnowledgeCell.m */; };
+		3D10B0261E20A218003B4885 /* WTFKnowledgeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D10B0241E20A218003B4885 /* WTFKnowledgeCell.xib */; };
+		3D10B0291E20A668003B4885 /* WTFHelpHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D10B0281E20A668003B4885 /* WTFHelpHeaderView.m */; };
+		3D10B02C1E20A6D7003B4885 /* WTFHelpButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D10B02B1E20A6D7003B4885 /* WTFHelpButton.m */; };
+		3D10B02F1E20A738003B4885 /* WTFHelpModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D10B02E1E20A738003B4885 /* WTFHelpModel.m */; };
+		3D10B0321E212A7B003B4885 /* WTFKnowledgeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D10B0311E212A7B003B4885 /* WTFKnowledgeModel.m */; };
+		3D10FD321DFA9039001B10CE /* NSString+WTFExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D10FD311DFA9039001B10CE /* NSString+WTFExtension.m */; };
+		3D10FD361DFB9C25001B10CE /* WTFForgetPasswordController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D10FD341DFB9C25001B10CE /* WTFForgetPasswordController.m */; };
+		3D10FD371DFB9C25001B10CE /* WTFForgetPasswordController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D10FD351DFB9C25001B10CE /* WTFForgetPasswordController.xib */; };
+		3D2920E31E1E3BC400403F74 /* WTFHelpContentController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D2920E11E1E3BC400403F74 /* WTFHelpContentController.m */; };
+		3D2920E41E1E3BC400403F74 /* WTFHelpContentController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D2920E21E1E3BC400403F74 /* WTFHelpContentController.xib */; };
+		3D646EB61E07A4C700906250 /* WTFQRCodeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D646EB41E07A4C700906250 /* WTFQRCodeController.m */; };
+		3D646EB71E07A4C700906250 /* WTFQRCodeController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D646EB51E07A4C700906250 /* WTFQRCodeController.xib */; };
+		3D80F52A1DF0548400BFB169 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D8ADBB01DE37B0500713E89 /* SystemConfiguration.framework */; };
+		3D80F5301DF056AE00BFB169 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D80F52F1DF056AE00BFB169 /* Reachability.m */; };
+		3D80F5651DF2570E00BFB169 /* WTFLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D80F5601DF2570E00BFB169 /* WTFLoginViewController.m */; };
+		3D80F5661DF2570E00BFB169 /* WTFLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D80F5611DF2570E00BFB169 /* WTFLoginViewController.xib */; };
+		3D80F5721DF25EEE00BFB169 /* WTFMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D80F5701DF25EEE00BFB169 /* WTFMeViewController.m */; };
+		3D80F58B1DF2604D00BFB169 /* WTFDeviceManagementController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D80F5781DF2604D00BFB169 /* WTFDeviceManagementController.m */; };
+		3D80F58C1DF2604D00BFB169 /* WTFDeviceManagementController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D80F5791DF2604D00BFB169 /* WTFDeviceManagementController.xib */; };
+		3D80F58D1DF2604D00BFB169 /* WTFEditDeviceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D80F57B1DF2604D00BFB169 /* WTFEditDeviceController.m */; };
+		3D80F58E1DF2604D00BFB169 /* WTFEditDeviceController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D80F57C1DF2604D00BFB169 /* WTFEditDeviceController.xib */; };
+		3D8A83C41DEE66DC003BAD6D /* WTFBackModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D8A83BD1DEE66DC003BAD6D /* WTFBackModel.m */; };
+		3D8A83C51DEE66DC003BAD6D /* WTFCodeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D8A83BF1DEE66DC003BAD6D /* WTFCodeModel.m */; };
+		3D8A83C61DEE66DC003BAD6D /* WTFLoginModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D8A83C11DEE66DC003BAD6D /* WTFLoginModel.m */; };
+		3D8A83C71DEE66DC003BAD6D /* WTFTokenModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D8A83C31DEE66DC003BAD6D /* WTFTokenModel.m */; };
+		3D8ADAE81DE35C4300713E89 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D8ADAE71DE35C4300713E89 /* Assets.xcassets */; };
+		3D8ADAEB1DE35C4300713E89 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D8ADAE91DE35C4300713E89 /* LaunchScreen.storyboard */; };
+		3D8ADB071DE3618A00713E89 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D8ADAFE1DE3618A00713E89 /* AppDelegate.m */; };
+		3D8ADB081DE3618A00713E89 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D8ADB011DE3618A00713E89 /* main.m */; };
+		3D8ADB0C1DE362E600713E89 /* Const.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D8ADB0B1DE362E600713E89 /* Const.m */; };
+		3D8ADB121DE3636000713E89 /* CustomNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D8ADB111DE3636000713E89 /* CustomNavigationController.m */; };
+		3D8ADB161DE363E000713E89 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D8ADB151DE363E000713E89 /* UIView+Extension.m */; };
+		3D8ADB441DE3640800713E89 /* RHSocketConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D8ADB191DE3640800713E89 /* RHSocketConnection.m */; };
+		3D8ADB531DE3647700713E89 /* WTFDeviceListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D8ADB511DE3647700713E89 /* WTFDeviceListCell.m */; };
+		3D8ADB541DE3647700713E89 /* WTFDeviceListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D8ADB521DE3647700713E89 /* WTFDeviceListCell.xib */; };
+		3D8ADB711DE36C5100713E89 /* WTFHelpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D8ADB6F1DE36C5100713E89 /* WTFHelpViewController.m */; };
+		3D8ADB721DE36C5100713E89 /* WTFHelpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D8ADB701DE36C5100713E89 /* WTFHelpViewController.xib */; };
+		3D8ADB751DE36D3800713E89 /* WTFMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D8ADB741DE36D3800713E89 /* WTFMainViewController.m */; };
+		3D8ADB791DE36D8E00713E89 /* WTFSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D8ADB771DE36D8E00713E89 /* WTFSettingViewController.m */; };
+		3D8ADB7E1DE36FD700713E89 /* WTFRealTimeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D8ADB7C1DE36FD700713E89 /* WTFRealTimeController.m */; };
+		3D8ADB831DE36FE600713E89 /* WTFHeatingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D8ADB811DE36FE600713E89 /* WTFHeatingController.m */; };
+		3D8ADB8D1DE3705900713E89 /* WTFPhysioController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D8ADB8B1DE3705900713E89 /* WTFPhysioController.m */; };
+		3D8ADB911DE3719000713E89 /* WTFTransModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D8ADB901DE3719000713E89 /* WTFTransModel.m */; };
+		3D8ADB941DE371C600713E89 /* WTFBodyModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D8ADB931DE371C600713E89 /* WTFBodyModel.m */; };
+		3D8ADB971DE3720100713E89 /* WTFParamsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D8ADB961DE3720100713E89 /* WTFParamsModel.m */; };
+		3D8ADB9A1DE3726100713E89 /* WTFRealTimeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D8ADB991DE3726100713E89 /* WTFRealTimeModel.m */; };
+		3D8ADB9D1DE3728300713E89 /* WTFHeatingModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D8ADB9C1DE3728300713E89 /* WTFHeatingModel.m */; };
+		3D8ADBA01DE372A700713E89 /* WTFPhysioModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D8ADB9F1DE372A700713E89 /* WTFPhysioModel.m */; };
+		3D8ADBAB1DE378F600713E89 /* WTFSettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D8ADBAA1DE378F600713E89 /* WTFSettingViewController.xib */; };
+		3D8C0FFF1E00394C00D686AD /* WTFMeBodyModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D8C0FFE1E00394C00D686AD /* WTFMeBodyModel.m */; };
+		3D8C10051E0039AC00D686AD /* WTFMeParamsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D8C10041E0039AC00D686AD /* WTFMeParamsModel.m */; };
+		3D8C10081E003ACA00D686AD /* WTFMJExtensionConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D8C10071E003ACA00D686AD /* WTFMJExtensionConfig.m */; };
+		3D8C10111E003D6400D686AD /* WTFDeviceInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D8C100A1E003D6400D686AD /* WTFDeviceInfoModel.m */; };
+		3D8C10121E003D6400D686AD /* WTFFlagDModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D8C100C1E003D6400D686AD /* WTFFlagDModel.m */; };
+		3D8C10131E003D6400D686AD /* WTFFlagModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D8C100E1E003D6400D686AD /* WTFFlagModel.m */; };
+		3D8C10141E003D6400D686AD /* WTFPersonModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D8C10101E003D6400D686AD /* WTFPersonModel.m */; };
+		3DA895421E5C446F00C07046 /* libiconv.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DA895411E5C446F00C07046 /* libiconv.2.dylib */; };
+		3DAF95F11E00D81B000FF8A1 /* WTFLoginBodyModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DAF95F01E00D81B000FF8A1 /* WTFLoginBodyModel.m */; };
+		3DAF95F41E00D82C000FF8A1 /* WTFLoginParamsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DAF95F31E00D82C000FF8A1 /* WTFLoginParamsModel.m */; };
+		3DAF95F71E00D9AE000FF8A1 /* WTFLoginCodeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DAF95F61E00D9AE000FF8A1 /* WTFLoginCodeModel.m */; };
+		3DAF95FA1E00DAC0000FF8A1 /* WTFLoginTokenModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DAF95F91E00DAC0000FF8A1 /* WTFLoginTokenModel.m */; };
+		3DAF960C1E0133D6000FF8A1 /* DDQRCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DAF960B1E0133D6000FF8A1 /* DDQRCodeViewController.m */; };
+		3DAF96141E014735000FF8A1 /* WTFPersonInfoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DAF96121E014735000FF8A1 /* WTFPersonInfoController.m */; };
+		3DAF96151E014735000FF8A1 /* WTFPersonInfoController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DAF96131E014735000FF8A1 /* WTFPersonInfoController.xib */; };
+		3DAF96191E014950000FF8A1 /* WTFInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DAF96171E014950000FF8A1 /* WTFInfoCell.m */; };
+		3DAF961A1E014950000FF8A1 /* WTFInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DAF96181E014950000FF8A1 /* WTFInfoCell.xib */; };
+		3DAF96231E01581A000FF8A1 /* WTFMeInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DAF96221E01581A000FF8A1 /* WTFMeInfoModel.m */; };
+		3DAF962C1E015C93000FF8A1 /* WTFEditNameController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DAF962A1E015C93000FF8A1 /* WTFEditNameController.m */; };
+		3DAF962D1E015C93000FF8A1 /* WTFEditNameController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DAF962B1E015C93000FF8A1 /* WTFEditNameController.xib */; };
+		3DAF96311E016570000FF8A1 /* WTFEditSexController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DAF962F1E016570000FF8A1 /* WTFEditSexController.m */; };
+		3DAF96321E016570000FF8A1 /* WTFEditSexController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DAF96301E016570000FF8A1 /* WTFEditSexController.xib */; };
+		3DAF96371E016911000FF8A1 /* WTFSexCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DAF96351E016911000FF8A1 /* WTFSexCell.m */; };
+		3DAF96381E016911000FF8A1 /* WTFSexCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DAF96361E016911000FF8A1 /* WTFSexCell.xib */; };
+		3DAF963C1E016B37000FF8A1 /* WTFEditBirthController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DAF963A1E016B37000FF8A1 /* WTFEditBirthController.m */; };
+		3DAF963D1E016B37000FF8A1 /* WTFEditBirthController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DAF963B1E016B37000FF8A1 /* WTFEditBirthController.xib */; };
+		3DAF963F1E01776D000FF8A1 /* WTFRealTimeController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DAF963E1E01776D000FF8A1 /* WTFRealTimeController.xib */; };
+		3DAF96411E017773000FF8A1 /* WTFPhysioController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DAF96401E017773000FF8A1 /* WTFPhysioController.xib */; };
+		3DAF96431E01777A000FF8A1 /* WTFHeatingController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DAF96421E01777A000FF8A1 /* WTFHeatingController.xib */; };
+		3DAF96451E017787000FF8A1 /* WTFMeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DAF96441E017787000FF8A1 /* WTFMeViewController.xib */; };
+		3DF497351DFFFAE9009DB18B /* LiteSimpleConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DF497341DFFFAE9009DB18B /* LiteSimpleConfig.m */; };
+		3DF4973D1DFFFF83009DB18B /* libLibSimpleConfig.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DF497391DFFFF83009DB18B /* libLibSimpleConfig.a */; };
+		B11D144EA3FE5454F79A523F /* Pods_SmartMattress.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8B44C1A67EC20188E03C082 /* Pods_SmartMattress.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		031D881215D3723341D1E189 /* Pods-SmartMattress.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartMattress.release.xcconfig"; path = "Pods/Target Support Files/Pods-SmartMattress/Pods-SmartMattress.release.xcconfig"; sourceTree = "<group>"; };
+		3D0CE8C81DFFBF53001B77AE /* WTFWiFiConfigController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTFWiFiConfigController.h; sourceTree = "<group>"; };
+		3D0CE8C91DFFBF53001B77AE /* WTFWiFiConfigController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTFWiFiConfigController.m; sourceTree = "<group>"; };
+		3D0CE8CA1DFFBF53001B77AE /* WTFWiFiConfigController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WTFWiFiConfigController.xib; sourceTree = "<group>"; };
+		3D0CE8CD1DFFC55C001B77AE /* WTFLoadingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTFLoadingViewController.h; sourceTree = "<group>"; };
+		3D0CE8CE1DFFC55C001B77AE /* WTFLoadingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTFLoadingViewController.m; sourceTree = "<group>"; };
+		3D0CE8CF1DFFC55C001B77AE /* WTFLoadingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WTFLoadingViewController.xib; sourceTree = "<group>"; };
+		3D0CE8D21DFFC825001B77AE /* loading.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = loading.gif; sourceTree = "<group>"; };
+		3D10B0221E20A218003B4885 /* WTFKnowledgeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTFKnowledgeCell.h; sourceTree = "<group>"; };
+		3D10B0231E20A218003B4885 /* WTFKnowledgeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTFKnowledgeCell.m; sourceTree = "<group>"; };
+		3D10B0241E20A218003B4885 /* WTFKnowledgeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WTFKnowledgeCell.xib; sourceTree = "<group>"; };
+		3D10B0271E20A668003B4885 /* WTFHelpHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTFHelpHeaderView.h; sourceTree = "<group>"; };
+		3D10B0281E20A668003B4885 /* WTFHelpHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTFHelpHeaderView.m; sourceTree = "<group>"; };
+		3D10B02A1E20A6D7003B4885 /* WTFHelpButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTFHelpButton.h; sourceTree = "<group>"; };
+		3D10B02B1E20A6D7003B4885 /* WTFHelpButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTFHelpButton.m; sourceTree = "<group>"; };
+		3D10B02D1E20A738003B4885 /* WTFHelpModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTFHelpModel.h; sourceTree = "<group>"; };
+		3D10B02E1E20A738003B4885 /* WTFHelpModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTFHelpModel.m; sourceTree = "<group>"; };
+		3D10B0301E212A7B003B4885 /* WTFKnowledgeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTFKnowledgeModel.h; sourceTree = "<group>"; };
+		3D10B0311E212A7B003B4885 /* WTFKnowledgeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTFKnowledgeModel.m; sourceTree = "<group>"; };
+		3D10FD301DFA9039001B10CE /* NSString+WTFExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+WTFExtension.h"; sourceTree = "<group>"; };
+		3D10FD311DFA9039001B10CE /* NSString+WTFExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+WTFExtension.m"; sourceTree = "<group>"; };
+		3D10FD331DFB9C25001B10CE /* WTFForgetPasswordController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTFForgetPasswordController.h; sourceTree = "<group>"; };
+		3D10FD341DFB9C25001B10CE /* WTFForgetPasswordController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTFForgetPasswordController.m; sourceTree = "<group>"; };
+		3D10FD351DFB9C25001B10CE /* WTFForgetPasswordController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WTFForgetPasswordController.xib; sourceTree = "<group>"; };
+		3D2920E01E1E3BC400403F74 /* WTFHelpContentController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTFHelpContentController.h; sourceTree = "<group>"; };
+		3D2920E11E1E3BC400403F74 /* WTFHelpContentController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTFHelpContentController.m; sourceTree = "<group>"; };
+		3D2920E21E1E3BC400403F74 /* WTFHelpContentController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WTFHelpContentController.xib; sourceTree = "<group>"; };
+		3D646EB31E07A4C700906250 /* WTFQRCodeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTFQRCodeController.h; sourceTree = "<group>"; };
+		3D646EB41E07A4C700906250 /* WTFQRCodeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTFQRCodeController.m; sourceTree = "<group>"; };
+		3D646EB51E07A4C700906250 /* WTFQRCodeController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WTFQRCodeController.xib; sourceTree = "<group>"; };
+		3D80F52E1DF056AE00BFB169 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		3D80F52F1DF056AE00BFB169 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		3D80F55F1DF2570E00BFB169 /* WTFLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTFLoginViewController.h; sourceTree = "<group>"; };
+		3D80F5601DF2570E00BFB169 /* WTFLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTFLoginViewController.m; sourceTree = "<group>"; };
+		3D80F5611DF2570E00BFB169 /* WTFLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WTFLoginViewController.xib; sourceTree = "<group>"; };
+		3D80F56F1DF25EEE00BFB169 /* WTFMeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTFMeViewController.h; sourceTree = "<group>"; };
+		3D80F5701DF25EEE00BFB169 /* WTFMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTFMeViewController.m; sourceTree = "<group>"; };
+		3D80F5771DF2604D00BFB169 /* WTFDeviceManagementController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTFDeviceManagementController.h; sourceTree = "<group>"; };
+		3D80F5781DF2604D00BFB169 /* WTFDeviceManagementController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTFDeviceManagementController.m; sourceTree = "<group>"; };
+		3D80F5791DF2604D00BFB169 /* WTFDeviceManagementController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WTFDeviceManagementController.xib; sourceTree = "<group>"; };
+		3D80F57A1DF2604D00BFB169 /* WTFEditDeviceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTFEditDeviceController.h; sourceTree = "<group>"; };
+		3D80F57B1DF2604D00BFB169 /* WTFEditDeviceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTFEditDeviceController.m; sourceTree = "<group>"; };
+		3D80F57C1DF2604D00BFB169 /* WTFEditDeviceController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WTFEditDeviceController.xib; sourceTree = "<group>"; };
+		3D8A83BC1DEE66DC003BAD6D /* WTFBackModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTFBackModel.h; sourceTree = "<group>"; };
+		3D8A83BD1DEE66DC003BAD6D /* WTFBackModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTFBackModel.m; sourceTree = "<group>"; };
+		3D8A83BE1DEE66DC003BAD6D /* WTFCodeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTFCodeModel.h; sourceTree = "<group>"; };
+		3D8A83BF1DEE66DC003BAD6D /* WTFCodeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTFCodeModel.m; sourceTree = "<group>"; };
+		3D8A83C01DEE66DC003BAD6D /* WTFLoginModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTFLoginModel.h; sourceTree = "<group>"; };
+		3D8A83C11DEE66DC003BAD6D /* WTFLoginModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTFLoginModel.m; sourceTree = "<group>"; };
+		3D8A83C21DEE66DC003BAD6D /* WTFTokenModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTFTokenModel.h; sourceTree = "<group>"; };
+		3D8A83C31DEE66DC003BAD6D /* WTFTokenModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTFTokenModel.m; sourceTree = "<group>"; };
+		3D8ADAD81DE35C4300713E89 /* SmartMattress.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartMattress.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D8ADAE71DE35C4300713E89 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3D8ADAEA1DE35C4300713E89 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3D8ADAEC1DE35C4300713E89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D8ADAFD1DE3618A00713E89 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3D8ADAFE1DE3618A00713E89 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3D8ADB011DE3618A00713E89 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3D8ADB091DE3627E00713E89 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		3D8ADB0A1DE362E600713E89 /* Const.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Const.h; sourceTree = "<group>"; };
+		3D8ADB0B1DE362E600713E89 /* Const.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Const.m; sourceTree = "<group>"; };
+		3D8ADB101DE3636000713E89 /* CustomNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomNavigationController.h; sourceTree = "<group>"; };
+		3D8ADB111DE3636000713E89 /* CustomNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomNavigationController.m; sourceTree = "<group>"; };
+		3D8ADB141DE363E000713E89 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		3D8ADB151DE363E000713E89 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		3D8ADB181DE3640800713E89 /* RHSocketConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RHSocketConnection.h; sourceTree = "<group>"; };
+		3D8ADB191DE3640800713E89 /* RHSocketConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RHSocketConnection.m; sourceTree = "<group>"; };
+		3D8ADB501DE3647700713E89 /* WTFDeviceListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTFDeviceListCell.h; sourceTree = "<group>"; };
+		3D8ADB511DE3647700713E89 /* WTFDeviceListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTFDeviceListCell.m; sourceTree = "<group>"; };
+		3D8ADB521DE3647700713E89 /* WTFDeviceListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WTFDeviceListCell.xib; sourceTree = "<group>"; };
+		3D8ADB6E1DE36C5100713E89 /* WTFHelpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTFHelpViewController.h; sourceTree = "<group>"; };
+		3D8ADB6F1DE36C5100713E89 /* WTFHelpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTFHelpViewController.m; sourceTree = "<group>"; };
+		3D8ADB701DE36C5100713E89 /* WTFHelpViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WTFHelpViewController.xib; sourceTree = "<group>"; };
+		3D8ADB731DE36D3800713E89 /* WTFMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTFMainViewController.h; sourceTree = "<group>"; };
+		3D8ADB741DE36D3800713E89 /* WTFMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTFMainViewController.m; sourceTree = "<group>"; };
+		3D8ADB761DE36D8E00713E89 /* WTFSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTFSettingViewController.h; sourceTree = "<group>"; };
+		3D8ADB771DE36D8E00713E89 /* WTFSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTFSettingViewController.m; sourceTree = "<group>"; };
+		3D8ADB7B1DE36FD700713E89 /* WTFRealTimeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTFRealTimeController.h; sourceTree = "<group>"; };
+		3D8ADB7C1DE36FD700713E89 /* WTFRealTimeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTFRealTimeController.m; sourceTree = "<group>"; };
+		3D8ADB801DE36FE600713E89 /* WTFHeatingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTFHeatingController.h; sourceTree = "<group>"; };
+		3D8ADB811DE36FE600713E89 /* WTFHeatingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTFHeatingController.m; sourceTree = "<group>"; };
+		3D8ADB8A1DE3705900713E89 /* WTFPhysioController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTFPhysioController.h; sourceTree = "<group>"; };
+		3D8ADB8B1DE3705900713E89 /* WTFPhysioController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTFPhysioController.m; sourceTree = "<group>"; };
+		3D8ADB8F1DE3719000713E89 /* WTFTransModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTFTransModel.h; sourceTree = "<group>"; };
+		3D8ADB901DE3719000713E89 /* WTFTransModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTFTransModel.m; sourceTree = "<group>"; };
+		3D8ADB921DE371C600713E89 /* WTFBodyModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTFBodyModel.h; sourceTree = "<group>"; };
+		3D8ADB931DE371C600713E89 /* WTFBodyModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTFBodyModel.m; sourceTree = "<group>"; };
+		3D8ADB951DE3720100713E89 /* WTFParamsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTFParamsModel.h; sourceTree = "<group>"; };
+		3D8ADB961DE3720100713E89 /* WTFParamsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTFParamsModel.m; sourceTree = "<group>"; };
+		3D8ADB981DE3726100713E89 /* WTFRealTimeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTFRealTimeModel.h; sourceTree = "<group>"; };
+		3D8ADB991DE3726100713E89 /* WTFRealTimeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTFRealTimeModel.m; sourceTree = "<group>"; };
+		3D8ADB9B1DE3728300713E89 /* WTFHeatingModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTFHeatingModel.h; sourceTree = "<group>"; };
+		3D8ADB9C1DE3728300713E89 /* WTFHeatingModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTFHeatingModel.m; sourceTree = "<group>"; };
+		3D8ADB9E1DE372A700713E89 /* WTFPhysioModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTFPhysioModel.h; sourceTree = "<group>"; };
+		3D8ADB9F1DE372A700713E89 /* WTFPhysioModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTFPhysioModel.m; sourceTree = "<group>"; };
+		3D8ADBAA1DE378F600713E89 /* WTFSettingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WTFSettingViewController.xib; sourceTree = "<group>"; };
+		3D8ADBAC1DE37AF800713E89 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		3D8ADBAE1DE37AFE00713E89 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3D8ADBB01DE37B0500713E89 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		3D8ADBB21DE37B0C00713E89 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		3D8ADBB41DE37B1300713E89 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		3D8ADBB61DE37B1A00713E89 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		3D8ADBB81DE37B2400713E89 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		3D8ADBBA1DE37B2D00713E89 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		3D8ADBBC1DE37B3600713E89 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		3D8ADBBE1DE37B4200713E89 /* libz.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.dylib; path = ../../../../../usr/lib/libz.1.dylib; sourceTree = "<group>"; };
+		3D8ADBC01DE37B5D00713E89 /* libiconv.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.2.dylib; path = ../../../../../usr/lib/libiconv.2.dylib; sourceTree = "<group>"; };
+		3D8C0FFD1E00394C00D686AD /* WTFMeBodyModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTFMeBodyModel.h; sourceTree = "<group>"; };
+		3D8C0FFE1E00394C00D686AD /* WTFMeBodyModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTFMeBodyModel.m; sourceTree = "<group>"; };
+		3D8C10031E0039AC00D686AD /* WTFMeParamsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTFMeParamsModel.h; sourceTree = "<group>"; };
+		3D8C10041E0039AC00D686AD /* WTFMeParamsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTFMeParamsModel.m; sourceTree = "<group>"; };
+		3D8C10061E003ACA00D686AD /* WTFMJExtensionConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTFMJExtensionConfig.h; sourceTree = "<group>"; };
+		3D8C10071E003ACA00D686AD /* WTFMJExtensionConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTFMJExtensionConfig.m; sourceTree = "<group>"; };
+		3D8C10091E003D6400D686AD /* WTFDeviceInfoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTFDeviceInfoModel.h; sourceTree = "<group>"; };
+		3D8C100A1E003D6400D686AD /* WTFDeviceInfoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTFDeviceInfoModel.m; sourceTree = "<group>"; };
+		3D8C100B1E003D6400D686AD /* WTFFlagDModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTFFlagDModel.h; sourceTree = "<group>"; };
+		3D8C100C1E003D6400D686AD /* WTFFlagDModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTFFlagDModel.m; sourceTree = "<group>"; };
+		3D8C100D1E003D6400D686AD /* WTFFlagModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTFFlagModel.h; sourceTree = "<group>"; };
+		3D8C100E1E003D6400D686AD /* WTFFlagModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTFFlagModel.m; sourceTree = "<group>"; };
+		3D8C100F1E003D6400D686AD /* WTFPersonModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTFPersonModel.h; sourceTree = "<group>"; };
+		3D8C10101E003D6400D686AD /* WTFPersonModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTFPersonModel.m; sourceTree = "<group>"; };
+		3DA895411E5C446F00C07046 /* libiconv.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.2.dylib; path = ../../../../../../usr/lib/libiconv.2.dylib; sourceTree = "<group>"; };
+		3DAF95EF1E00D81B000FF8A1 /* WTFLoginBodyModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTFLoginBodyModel.h; sourceTree = "<group>"; };
+		3DAF95F01E00D81B000FF8A1 /* WTFLoginBodyModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTFLoginBodyModel.m; sourceTree = "<group>"; };
+		3DAF95F21E00D82C000FF8A1 /* WTFLoginParamsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTFLoginParamsModel.h; sourceTree = "<group>"; };
+		3DAF95F31E00D82C000FF8A1 /* WTFLoginParamsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTFLoginParamsModel.m; sourceTree = "<group>"; };
+		3DAF95F51E00D9AE000FF8A1 /* WTFLoginCodeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTFLoginCodeModel.h; sourceTree = "<group>"; };
+		3DAF95F61E00D9AE000FF8A1 /* WTFLoginCodeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTFLoginCodeModel.m; sourceTree = "<group>"; };
+		3DAF95F81E00DAC0000FF8A1 /* WTFLoginTokenModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTFLoginTokenModel.h; sourceTree = "<group>"; };
+		3DAF95F91E00DAC0000FF8A1 /* WTFLoginTokenModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTFLoginTokenModel.m; sourceTree = "<group>"; };
+		3DAF960A1E0133D6000FF8A1 /* DDQRCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDQRCodeViewController.h; sourceTree = "<group>"; };
+		3DAF960B1E0133D6000FF8A1 /* DDQRCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDQRCodeViewController.m; sourceTree = "<group>"; };
+		3DAF96111E014735000FF8A1 /* WTFPersonInfoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTFPersonInfoController.h; sourceTree = "<group>"; };
+		3DAF96121E014735000FF8A1 /* WTFPersonInfoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTFPersonInfoController.m; sourceTree = "<group>"; };
+		3DAF96131E014735000FF8A1 /* WTFPersonInfoController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WTFPersonInfoController.xib; sourceTree = "<group>"; };
+		3DAF96161E014950000FF8A1 /* WTFInfoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTFInfoCell.h; sourceTree = "<group>"; };
+		3DAF96171E014950000FF8A1 /* WTFInfoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTFInfoCell.m; sourceTree = "<group>"; };
+		3DAF96181E014950000FF8A1 /* WTFInfoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WTFInfoCell.xib; sourceTree = "<group>"; };
+		3DAF96211E01581A000FF8A1 /* WTFMeInfoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTFMeInfoModel.h; sourceTree = "<group>"; };
+		3DAF96221E01581A000FF8A1 /* WTFMeInfoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTFMeInfoModel.m; sourceTree = "<group>"; };
+		3DAF96291E015C93000FF8A1 /* WTFEditNameController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTFEditNameController.h; sourceTree = "<group>"; };
+		3DAF962A1E015C93000FF8A1 /* WTFEditNameController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTFEditNameController.m; sourceTree = "<group>"; };
+		3DAF962B1E015C93000FF8A1 /* WTFEditNameController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WTFEditNameController.xib; sourceTree = "<group>"; };
+		3DAF962E1E016570000FF8A1 /* WTFEditSexController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTFEditSexController.h; sourceTree = "<group>"; };
+		3DAF962F1E016570000FF8A1 /* WTFEditSexController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTFEditSexController.m; sourceTree = "<group>"; };
+		3DAF96301E016570000FF8A1 /* WTFEditSexController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WTFEditSexController.xib; sourceTree = "<group>"; };
+		3DAF96341E016911000FF8A1 /* WTFSexCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTFSexCell.h; sourceTree = "<group>"; };
+		3DAF96351E016911000FF8A1 /* WTFSexCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTFSexCell.m; sourceTree = "<group>"; };
+		3DAF96361E016911000FF8A1 /* WTFSexCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WTFSexCell.xib; sourceTree = "<group>"; };
+		3DAF96391E016B37000FF8A1 /* WTFEditBirthController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTFEditBirthController.h; sourceTree = "<group>"; };
+		3DAF963A1E016B37000FF8A1 /* WTFEditBirthController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTFEditBirthController.m; sourceTree = "<group>"; };
+		3DAF963B1E016B37000FF8A1 /* WTFEditBirthController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WTFEditBirthController.xib; sourceTree = "<group>"; };
+		3DAF963E1E01776D000FF8A1 /* WTFRealTimeController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WTFRealTimeController.xib; sourceTree = "<group>"; };
+		3DAF96401E017773000FF8A1 /* WTFPhysioController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WTFPhysioController.xib; sourceTree = "<group>"; };
+		3DAF96421E01777A000FF8A1 /* WTFHeatingController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WTFHeatingController.xib; sourceTree = "<group>"; };
+		3DAF96441E017787000FF8A1 /* WTFMeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WTFMeViewController.xib; sourceTree = "<group>"; };
+		3DF497331DFFFAE9009DB18B /* LiteSimpleConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LiteSimpleConfig.h; sourceTree = "<group>"; };
+		3DF497341DFFFAE9009DB18B /* LiteSimpleConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LiteSimpleConfig.m; sourceTree = "<group>"; };
+		3DF497371DFFFF83009DB18B /* AsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncSocket.h; sourceTree = "<group>"; };
+		3DF497381DFFFF83009DB18B /* AsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncUdpSocket.h; sourceTree = "<group>"; };
+		3DF497391DFFFF83009DB18B /* libLibSimpleConfig.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libLibSimpleConfig.a; sourceTree = "<group>"; };
+		3DF4973A1DFFFF83009DB18B /* LibSimpleConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LibSimpleConfig.h; sourceTree = "<group>"; };
+		3DF4973B1DFFFF83009DB18B /* NSData+AES.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+AES.h"; sourceTree = "<group>"; };
+		3DF4973C1DFFFF83009DB18B /* SimpleConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleConfig.h; sourceTree = "<group>"; };
+		72F4F811BE1B79AD31A7E0BA /* Pods-SmartMattress.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartMattress.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SmartMattress/Pods-SmartMattress.debug.xcconfig"; sourceTree = "<group>"; };
+		C8B44C1A67EC20188E03C082 /* Pods_SmartMattress.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmartMattress.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3D8ADAD51DE35C4300713E89 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DA895421E5C446F00C07046 /* libiconv.2.dylib in Frameworks */,
+				3D80F52A1DF0548400BFB169 /* SystemConfiguration.framework in Frameworks */,
+				B11D144EA3FE5454F79A523F /* Pods_SmartMattress.framework in Frameworks */,
+				3DF4973D1DFFFF83009DB18B /* libLibSimpleConfig.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3D540D9D1DE8290000A559F0 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				3D540D9F1DE8290000A559F0 /* Model */,
+				3D540DA01DE8290000A559F0 /* View */,
+				3D540D9E1DE8290000A559F0 /* Controller */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		3D540D9E1DE8290000A559F0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3D80F55F1DF2570E00BFB169 /* WTFLoginViewController.h */,
+				3D80F5601DF2570E00BFB169 /* WTFLoginViewController.m */,
+				3D80F5611DF2570E00BFB169 /* WTFLoginViewController.xib */,
+				3D10FD331DFB9C25001B10CE /* WTFForgetPasswordController.h */,
+				3D10FD341DFB9C25001B10CE /* WTFForgetPasswordController.m */,
+				3D10FD351DFB9C25001B10CE /* WTFForgetPasswordController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3D540D9F1DE8290000A559F0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3D8A83BC1DEE66DC003BAD6D /* WTFBackModel.h */,
+				3D8A83BD1DEE66DC003BAD6D /* WTFBackModel.m */,
+				3D8A83BE1DEE66DC003BAD6D /* WTFCodeModel.h */,
+				3D8A83BF1DEE66DC003BAD6D /* WTFCodeModel.m */,
+				3D8A83C01DEE66DC003BAD6D /* WTFLoginModel.h */,
+				3D8A83C11DEE66DC003BAD6D /* WTFLoginModel.m */,
+				3D8A83C21DEE66DC003BAD6D /* WTFTokenModel.h */,
+				3D8A83C31DEE66DC003BAD6D /* WTFTokenModel.m */,
+				3DAF95EF1E00D81B000FF8A1 /* WTFLoginBodyModel.h */,
+				3DAF95F01E00D81B000FF8A1 /* WTFLoginBodyModel.m */,
+				3DAF95F21E00D82C000FF8A1 /* WTFLoginParamsModel.h */,
+				3DAF95F31E00D82C000FF8A1 /* WTFLoginParamsModel.m */,
+				3DAF95F51E00D9AE000FF8A1 /* WTFLoginCodeModel.h */,
+				3DAF95F61E00D9AE000FF8A1 /* WTFLoginCodeModel.m */,
+				3DAF95F81E00DAC0000FF8A1 /* WTFLoginTokenModel.h */,
+				3DAF95F91E00DAC0000FF8A1 /* WTFLoginTokenModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3D540DA01DE8290000A559F0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3D8A83DB1DEE728C003BAD6D /* DeviceManagement */ = {
+			isa = PBXGroup;
+			children = (
+				3D646EB31E07A4C700906250 /* WTFQRCodeController.h */,
+				3D646EB41E07A4C700906250 /* WTFQRCodeController.m */,
+				3D646EB51E07A4C700906250 /* WTFQRCodeController.xib */,
+				3D80F57A1DF2604D00BFB169 /* WTFEditDeviceController.h */,
+				3D80F57B1DF2604D00BFB169 /* WTFEditDeviceController.m */,
+				3D80F57C1DF2604D00BFB169 /* WTFEditDeviceController.xib */,
+				3D0CE8C81DFFBF53001B77AE /* WTFWiFiConfigController.h */,
+				3D0CE8C91DFFBF53001B77AE /* WTFWiFiConfigController.m */,
+				3D0CE8CA1DFFBF53001B77AE /* WTFWiFiConfigController.xib */,
+				3D0CE8CD1DFFC55C001B77AE /* WTFLoadingViewController.h */,
+				3D0CE8CE1DFFC55C001B77AE /* WTFLoadingViewController.m */,
+				3D0CE8CF1DFFC55C001B77AE /* WTFLoadingViewController.xib */,
+			);
+			name = DeviceManagement;
+			sourceTree = "<group>";
+		};
+		3D8A83E11DEE786C003BAD6D /* PersonInfoEdit */ = {
+			isa = PBXGroup;
+			children = (
+				3DAF96291E015C93000FF8A1 /* WTFEditNameController.h */,
+				3DAF962A1E015C93000FF8A1 /* WTFEditNameController.m */,
+				3DAF962B1E015C93000FF8A1 /* WTFEditNameController.xib */,
+				3DAF962E1E016570000FF8A1 /* WTFEditSexController.h */,
+				3DAF962F1E016570000FF8A1 /* WTFEditSexController.m */,
+				3DAF96301E016570000FF8A1 /* WTFEditSexController.xib */,
+				3DAF96391E016B37000FF8A1 /* WTFEditBirthController.h */,
+				3DAF963A1E016B37000FF8A1 /* WTFEditBirthController.m */,
+				3DAF963B1E016B37000FF8A1 /* WTFEditBirthController.xib */,
+			);
+			name = PersonInfoEdit;
+			sourceTree = "<group>";
+		};
+		3D8ADACF1DE35C4300713E89 = {
+			isa = PBXGroup;
+			children = (
+				3D8ADADA1DE35C4300713E89 /* SmartMattress */,
+				3D8ADAD91DE35C4300713E89 /* Products */,
+				3DD6204AABF0CCDA70FE0288 /* Pods */,
+				51104F24C479D5767F676CD4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3D8ADAD91DE35C4300713E89 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3D8ADAD81DE35C4300713E89 /* SmartMattress.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3D8ADADA1DE35C4300713E89 /* SmartMattress */ = {
+			isa = PBXGroup;
+			children = (
+				3D8ADAF21DE3618A00713E89 /* Classes */,
+				3D8ADADB1DE35C4300713E89 /* Supporting Files */,
+			);
+			path = SmartMattress;
+			sourceTree = "<group>";
+		};
+		3D8ADADB1DE35C4300713E89 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3D8ADAEC1DE35C4300713E89 /* Info.plist */,
+				3D8ADAE71DE35C4300713E89 /* Assets.xcassets */,
+				3D0CE8D21DFFC825001B77AE /* loading.gif */,
+				3D8ADAE91DE35C4300713E89 /* LaunchScreen.storyboard */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3D8ADAF21DE3618A00713E89 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				3D540D9D1DE8290000A559F0 /* Login */,
+				3D8ADAF71DE3618A00713E89 /* Main */,
+				3D8ADB031DE3618A00713E89 /* Setting */,
+				3D8ADAF31DE3618A00713E89 /* Help */,
+				3D8ADAF81DE3618A00713E89 /* Me */,
+				3D8ADAFC1DE3618A00713E89 /* Others */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		3D8ADAF31DE3618A00713E89 /* Help */ = {
+			isa = PBXGroup;
+			children = (
+				3D8ADAF51DE3618A00713E89 /* Model */,
+				3D8ADAF61DE3618A00713E89 /* View */,
+				3D8ADAF41DE3618A00713E89 /* Controller */,
+			);
+			path = Help;
+			sourceTree = "<group>";
+		};
+		3D8ADAF41DE3618A00713E89 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3D8ADB6E1DE36C5100713E89 /* WTFHelpViewController.h */,
+				3D8ADB6F1DE36C5100713E89 /* WTFHelpViewController.m */,
+				3D8ADB701DE36C5100713E89 /* WTFHelpViewController.xib */,
+				3D2920E01E1E3BC400403F74 /* WTFHelpContentController.h */,
+				3D2920E11E1E3BC400403F74 /* WTFHelpContentController.m */,
+				3D2920E21E1E3BC400403F74 /* WTFHelpContentController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3D8ADAF51DE3618A00713E89 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3D10B02D1E20A738003B4885 /* WTFHelpModel.h */,
+				3D10B02E1E20A738003B4885 /* WTFHelpModel.m */,
+				3D10B0301E212A7B003B4885 /* WTFKnowledgeModel.h */,
+				3D10B0311E212A7B003B4885 /* WTFKnowledgeModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3D8ADAF61DE3618A00713E89 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3D10B0221E20A218003B4885 /* WTFKnowledgeCell.h */,
+				3D10B0231E20A218003B4885 /* WTFKnowledgeCell.m */,
+				3D10B0241E20A218003B4885 /* WTFKnowledgeCell.xib */,
+				3D10B0271E20A668003B4885 /* WTFHelpHeaderView.h */,
+				3D10B0281E20A668003B4885 /* WTFHelpHeaderView.m */,
+				3D10B02A1E20A6D7003B4885 /* WTFHelpButton.h */,
+				3D10B02B1E20A6D7003B4885 /* WTFHelpButton.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3D8ADAF71DE3618A00713E89 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				3D8ADB731DE36D3800713E89 /* WTFMainViewController.h */,
+				3D8ADB741DE36D3800713E89 /* WTFMainViewController.m */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		3D8ADAF81DE3618A00713E89 /* Me */ = {
+			isa = PBXGroup;
+			children = (
+				3D8ADAFA1DE3618A00713E89 /* Model */,
+				3D8ADAFB1DE3618A00713E89 /* View */,
+				3D8ADAF91DE3618A00713E89 /* Controller */,
+			);
+			path = Me;
+			sourceTree = "<group>";
+		};
+		3D8ADAF91DE3618A00713E89 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3D80F56F1DF25EEE00BFB169 /* WTFMeViewController.h */,
+				3D80F5701DF25EEE00BFB169 /* WTFMeViewController.m */,
+				3DAF96441E017787000FF8A1 /* WTFMeViewController.xib */,
+				3D80F5771DF2604D00BFB169 /* WTFDeviceManagementController.h */,
+				3D80F5781DF2604D00BFB169 /* WTFDeviceManagementController.m */,
+				3D80F5791DF2604D00BFB169 /* WTFDeviceManagementController.xib */,
+				3DAF96111E014735000FF8A1 /* WTFPersonInfoController.h */,
+				3DAF96121E014735000FF8A1 /* WTFPersonInfoController.m */,
+				3DAF96131E014735000FF8A1 /* WTFPersonInfoController.xib */,
+				3D8A83DB1DEE728C003BAD6D /* DeviceManagement */,
+				3D8A83E11DEE786C003BAD6D /* PersonInfoEdit */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3D8ADAFA1DE3618A00713E89 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3D8C10091E003D6400D686AD /* WTFDeviceInfoModel.h */,
+				3D8C100A1E003D6400D686AD /* WTFDeviceInfoModel.m */,
+				3D8C100B1E003D6400D686AD /* WTFFlagDModel.h */,
+				3D8C100C1E003D6400D686AD /* WTFFlagDModel.m */,
+				3D8C100D1E003D6400D686AD /* WTFFlagModel.h */,
+				3D8C100E1E003D6400D686AD /* WTFFlagModel.m */,
+				3D8C100F1E003D6400D686AD /* WTFPersonModel.h */,
+				3D8C10101E003D6400D686AD /* WTFPersonModel.m */,
+				3D8C0FFD1E00394C00D686AD /* WTFMeBodyModel.h */,
+				3D8C0FFE1E00394C00D686AD /* WTFMeBodyModel.m */,
+				3D8C10031E0039AC00D686AD /* WTFMeParamsModel.h */,
+				3D8C10041E0039AC00D686AD /* WTFMeParamsModel.m */,
+				3DAF96211E01581A000FF8A1 /* WTFMeInfoModel.h */,
+				3DAF96221E01581A000FF8A1 /* WTFMeInfoModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3D8ADAFB1DE3618A00713E89 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3D8ADB501DE3647700713E89 /* WTFDeviceListCell.h */,
+				3D8ADB511DE3647700713E89 /* WTFDeviceListCell.m */,
+				3D8ADB521DE3647700713E89 /* WTFDeviceListCell.xib */,
+				3DAF96161E014950000FF8A1 /* WTFInfoCell.h */,
+				3DAF96171E014950000FF8A1 /* WTFInfoCell.m */,
+				3DAF96181E014950000FF8A1 /* WTFInfoCell.xib */,
+				3DAF96341E016911000FF8A1 /* WTFSexCell.h */,
+				3DAF96351E016911000FF8A1 /* WTFSexCell.m */,
+				3DAF96361E016911000FF8A1 /* WTFSexCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3D8ADAFC1DE3618A00713E89 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				3D8ADB091DE3627E00713E89 /* PrefixHeader.pch */,
+				3DF497331DFFFAE9009DB18B /* LiteSimpleConfig.h */,
+				3DF497341DFFFAE9009DB18B /* LiteSimpleConfig.m */,
+				3D8C10061E003ACA00D686AD /* WTFMJExtensionConfig.h */,
+				3D8C10071E003ACA00D686AD /* WTFMJExtensionConfig.m */,
+				3D8ADB131DE363E000713E89 /* Category */,
+				3D8ADB001DE3618A00713E89 /* Controller */,
+				3D8ADB0A1DE362E600713E89 /* Const.h */,
+				3D8ADB0B1DE362E600713E89 /* Const.m */,
+				3D8ADAFD1DE3618A00713E89 /* AppDelegate.h */,
+				3D8ADAFE1DE3618A00713E89 /* AppDelegate.m */,
+				3D8ADB011DE3618A00713E89 /* main.m */,
+				3DAF96091E0133C3000FF8A1 /* DDQRCode */,
+				3DF497361DFFFF83009DB18B /* LibSimpleConfig */,
+				3D8ADB171DE3640800713E89 /* RHSocketConnection */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		3D8ADB001DE3618A00713E89 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3D8ADB101DE3636000713E89 /* CustomNavigationController.h */,
+				3D8ADB111DE3636000713E89 /* CustomNavigationController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3D8ADB031DE3618A00713E89 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				3D8ADB051DE3618A00713E89 /* Model */,
+				3D8ADB061DE3618A00713E89 /* View */,
+				3D8ADB041DE3618A00713E89 /* Controller */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		3D8ADB041DE3618A00713E89 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3D8ADB761DE36D8E00713E89 /* WTFSettingViewController.h */,
+				3D8ADB771DE36D8E00713E89 /* WTFSettingViewController.m */,
+				3D8ADBAA1DE378F600713E89 /* WTFSettingViewController.xib */,
+				3D8ADB7B1DE36FD700713E89 /* WTFRealTimeController.h */,
+				3D8ADB7C1DE36FD700713E89 /* WTFRealTimeController.m */,
+				3DAF963E1E01776D000FF8A1 /* WTFRealTimeController.xib */,
+				3D8ADB801DE36FE600713E89 /* WTFHeatingController.h */,
+				3D8ADB811DE36FE600713E89 /* WTFHeatingController.m */,
+				3DAF96421E01777A000FF8A1 /* WTFHeatingController.xib */,
+				3D8ADB8A1DE3705900713E89 /* WTFPhysioController.h */,
+				3D8ADB8B1DE3705900713E89 /* WTFPhysioController.m */,
+				3DAF96401E017773000FF8A1 /* WTFPhysioController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3D8ADB051DE3618A00713E89 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3D8ADB8F1DE3719000713E89 /* WTFTransModel.h */,
+				3D8ADB901DE3719000713E89 /* WTFTransModel.m */,
+				3D8ADB921DE371C600713E89 /* WTFBodyModel.h */,
+				3D8ADB931DE371C600713E89 /* WTFBodyModel.m */,
+				3D8ADB951DE3720100713E89 /* WTFParamsModel.h */,
+				3D8ADB961DE3720100713E89 /* WTFParamsModel.m */,
+				3D8ADB981DE3726100713E89 /* WTFRealTimeModel.h */,
+				3D8ADB991DE3726100713E89 /* WTFRealTimeModel.m */,
+				3D8ADB9B1DE3728300713E89 /* WTFHeatingModel.h */,
+				3D8ADB9C1DE3728300713E89 /* WTFHeatingModel.m */,
+				3D8ADB9E1DE372A700713E89 /* WTFPhysioModel.h */,
+				3D8ADB9F1DE372A700713E89 /* WTFPhysioModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3D8ADB061DE3618A00713E89 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3D8ADB131DE363E000713E89 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				3D80F52E1DF056AE00BFB169 /* Reachability.h */,
+				3D80F52F1DF056AE00BFB169 /* Reachability.m */,
+				3D8ADB141DE363E000713E89 /* UIView+Extension.h */,
+				3D8ADB151DE363E000713E89 /* UIView+Extension.m */,
+				3D10FD301DFA9039001B10CE /* NSString+WTFExtension.h */,
+				3D10FD311DFA9039001B10CE /* NSString+WTFExtension.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		3D8ADB171DE3640800713E89 /* RHSocketConnection */ = {
+			isa = PBXGroup;
+			children = (
+				3D8ADB181DE3640800713E89 /* RHSocketConnection.h */,
+				3D8ADB191DE3640800713E89 /* RHSocketConnection.m */,
+			);
+			path = RHSocketConnection;
+			sourceTree = "<group>";
+		};
+		3DAF96091E0133C3000FF8A1 /* DDQRCode */ = {
+			isa = PBXGroup;
+			children = (
+				3DAF960A1E0133D6000FF8A1 /* DDQRCodeViewController.h */,
+				3DAF960B1E0133D6000FF8A1 /* DDQRCodeViewController.m */,
+			);
+			path = DDQRCode;
+			sourceTree = "<group>";
+		};
+		3DD6204AABF0CCDA70FE0288 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				72F4F811BE1B79AD31A7E0BA /* Pods-SmartMattress.debug.xcconfig */,
+				031D881215D3723341D1E189 /* Pods-SmartMattress.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		3DF497361DFFFF83009DB18B /* LibSimpleConfig */ = {
+			isa = PBXGroup;
+			children = (
+				3DF497371DFFFF83009DB18B /* AsyncSocket.h */,
+				3DF497381DFFFF83009DB18B /* AsyncUdpSocket.h */,
+				3DF497391DFFFF83009DB18B /* libLibSimpleConfig.a */,
+				3DF4973A1DFFFF83009DB18B /* LibSimpleConfig.h */,
+				3DF4973B1DFFFF83009DB18B /* NSData+AES.h */,
+				3DF4973C1DFFFF83009DB18B /* SimpleConfig.h */,
+			);
+			path = LibSimpleConfig;
+			sourceTree = "<group>";
+		};
+		51104F24C479D5767F676CD4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3DA895411E5C446F00C07046 /* libiconv.2.dylib */,
+				3D8ADBC01DE37B5D00713E89 /* libiconv.2.dylib */,
+				3D8ADBBE1DE37B4200713E89 /* libz.1.dylib */,
+				3D8ADBBC1DE37B3600713E89 /* CoreGraphics.framework */,
+				3D8ADBBA1DE37B2D00713E89 /* CoreMedia.framework */,
+				3D8ADBB81DE37B2400713E89 /* CoreVideo.framework */,
+				3D8ADBB61DE37B1A00713E89 /* CFNetwork.framework */,
+				3D8ADBB41DE37B1300713E89 /* QuartzCore.framework */,
+				3D8ADBB21DE37B0C00713E89 /* AVFoundation.framework */,
+				3D8ADBB01DE37B0500713E89 /* SystemConfiguration.framework */,
+				3D8ADBAE1DE37AFE00713E89 /* Foundation.framework */,
+				3D8ADBAC1DE37AF800713E89 /* UIKit.framework */,
+				C8B44C1A67EC20188E03C082 /* Pods_SmartMattress.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3D8ADAD71DE35C4300713E89 /* SmartMattress */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D8ADAEF1DE35C4300713E89 /* Build configuration list for PBXNativeTarget "SmartMattress" */;
+			buildPhases = (
+				F4D11B1BFEF79E3C6800D753 /* [CP] Check Pods Manifest.lock */,
+				3D8ADAD41DE35C4300713E89 /* Sources */,
+				3D8ADAD51DE35C4300713E89 /* Frameworks */,
+				3D8ADAD61DE35C4300713E89 /* Resources */,
+				CD7605F937121BF576482809 /* [CP] Embed Pods Frameworks */,
+				27D9E46C43841F0D72A8AF2B /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SmartMattress;
+			productName = SmartMattress;
+			productReference = 3D8ADAD81DE35C4300713E89 /* SmartMattress.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3D8ADAD01DE35C4300713E89 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = WTF;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = lesmarthome;
+				TargetAttributes = {
+					3D8ADAD71DE35C4300713E89 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = VZP5CZ5AYP;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 3D8ADAD31DE35C4300713E89 /* Build configuration list for PBXProject "SmartMattress" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3D8ADACF1DE35C4300713E89;
+			productRefGroup = 3D8ADAD91DE35C4300713E89 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3D8ADAD71DE35C4300713E89 /* SmartMattress */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3D8ADAD61DE35C4300713E89 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DAF96381E016911000FF8A1 /* WTFSexCell.xib in Resources */,
+				3DAF961A1E014950000FF8A1 /* WTFInfoCell.xib in Resources */,
+				3DAF96451E017787000FF8A1 /* WTFMeViewController.xib in Resources */,
+				3DAF963F1E01776D000FF8A1 /* WTFRealTimeController.xib in Resources */,
+				3DAF96321E016570000FF8A1 /* WTFEditSexController.xib in Resources */,
+				3DAF963D1E016B37000FF8A1 /* WTFEditBirthController.xib in Resources */,
+				3D2920E41E1E3BC400403F74 /* WTFHelpContentController.xib in Resources */,
+				3D0CE8D11DFFC55C001B77AE /* WTFLoadingViewController.xib in Resources */,
+				3DAF96151E014735000FF8A1 /* WTFPersonInfoController.xib in Resources */,
+				3D8ADB721DE36C5100713E89 /* WTFHelpViewController.xib in Resources */,
+				3D80F5661DF2570E00BFB169 /* WTFLoginViewController.xib in Resources */,
+				3DAF96431E01777A000FF8A1 /* WTFHeatingController.xib in Resources */,
+				3D10B0261E20A218003B4885 /* WTFKnowledgeCell.xib in Resources */,
+				3D8ADB541DE3647700713E89 /* WTFDeviceListCell.xib in Resources */,
+				3D80F58E1DF2604D00BFB169 /* WTFEditDeviceController.xib in Resources */,
+				3D80F58C1DF2604D00BFB169 /* WTFDeviceManagementController.xib in Resources */,
+				3D10FD371DFB9C25001B10CE /* WTFForgetPasswordController.xib in Resources */,
+				3D0CE8D31DFFC825001B77AE /* loading.gif in Resources */,
+				3D8ADBAB1DE378F600713E89 /* WTFSettingViewController.xib in Resources */,
+				3D0CE8CC1DFFBF53001B77AE /* WTFWiFiConfigController.xib in Resources */,
+				3DAF962D1E015C93000FF8A1 /* WTFEditNameController.xib in Resources */,
+				3DAF96411E017773000FF8A1 /* WTFPhysioController.xib in Resources */,
+				3D646EB71E07A4C700906250 /* WTFQRCodeController.xib in Resources */,
+				3D8ADAEB1DE35C4300713E89 /* LaunchScreen.storyboard in Resources */,
+				3D8ADAE81DE35C4300713E89 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		27D9E46C43841F0D72A8AF2B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SmartMattress/Pods-SmartMattress-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CD7605F937121BF576482809 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SmartMattress/Pods-SmartMattress-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F4D11B1BFEF79E3C6800D753 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3D8ADAD41DE35C4300713E89 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D8A83C41DEE66DC003BAD6D /* WTFBackModel.m in Sources */,
+				3D8ADB161DE363E000713E89 /* UIView+Extension.m in Sources */,
+				3D646EB61E07A4C700906250 /* WTFQRCodeController.m in Sources */,
+				3D8ADB941DE371C600713E89 /* WTFBodyModel.m in Sources */,
+				3D8ADB0C1DE362E600713E89 /* Const.m in Sources */,
+				3DAF95F71E00D9AE000FF8A1 /* WTFLoginCodeModel.m in Sources */,
+				3D8C0FFF1E00394C00D686AD /* WTFMeBodyModel.m in Sources */,
+				3DAF963C1E016B37000FF8A1 /* WTFEditBirthController.m in Sources */,
+				3D10B0321E212A7B003B4885 /* WTFKnowledgeModel.m in Sources */,
+				3DAF95F11E00D81B000FF8A1 /* WTFLoginBodyModel.m in Sources */,
+				3D8ADB791DE36D8E00713E89 /* WTFSettingViewController.m in Sources */,
+				3D8C10051E0039AC00D686AD /* WTFMeParamsModel.m in Sources */,
+				3D80F5301DF056AE00BFB169 /* Reachability.m in Sources */,
+				3D8ADB121DE3636000713E89 /* CustomNavigationController.m in Sources */,
+				3D8ADB081DE3618A00713E89 /* main.m in Sources */,
+				3D80F5651DF2570E00BFB169 /* WTFLoginViewController.m in Sources */,
+				3D8C10111E003D6400D686AD /* WTFDeviceInfoModel.m in Sources */,
+				3D10B02F1E20A738003B4885 /* WTFHelpModel.m in Sources */,
+				3D80F58D1DF2604D00BFB169 /* WTFEditDeviceController.m in Sources */,
+				3D8C10131E003D6400D686AD /* WTFFlagModel.m in Sources */,
+				3D8C10141E003D6400D686AD /* WTFPersonModel.m in Sources */,
+				3D0CE8CB1DFFBF53001B77AE /* WTFWiFiConfigController.m in Sources */,
+				3DAF95F41E00D82C000FF8A1 /* WTFLoginParamsModel.m in Sources */,
+				3D8ADB751DE36D3800713E89 /* WTFMainViewController.m in Sources */,
+				3D2920E31E1E3BC400403F74 /* WTFHelpContentController.m in Sources */,
+				3D8C10081E003ACA00D686AD /* WTFMJExtensionConfig.m in Sources */,
+				3D8ADB9A1DE3726100713E89 /* WTFRealTimeModel.m in Sources */,
+				3D8A83C71DEE66DC003BAD6D /* WTFTokenModel.m in Sources */,
+				3D10FD321DFA9039001B10CE /* NSString+WTFExtension.m in Sources */,
+				3D8A83C61DEE66DC003BAD6D /* WTFLoginModel.m in Sources */,
+				3DAF960C1E0133D6000FF8A1 /* DDQRCodeViewController.m in Sources */,
+				3DAF96311E016570000FF8A1 /* WTFEditSexController.m in Sources */,
+				3D8ADB531DE3647700713E89 /* WTFDeviceListCell.m in Sources */,
+				3D80F58B1DF2604D00BFB169 /* WTFDeviceManagementController.m in Sources */,
+				3DF497351DFFFAE9009DB18B /* LiteSimpleConfig.m in Sources */,
+				3DAF96231E01581A000FF8A1 /* WTFMeInfoModel.m in Sources */,
+				3D8ADB7E1DE36FD700713E89 /* WTFRealTimeController.m in Sources */,
+				3D8ADB971DE3720100713E89 /* WTFParamsModel.m in Sources */,
+				3DAF96141E014735000FF8A1 /* WTFPersonInfoController.m in Sources */,
+				3D10B0251E20A218003B4885 /* WTFKnowledgeCell.m in Sources */,
+				3D8A83C51DEE66DC003BAD6D /* WTFCodeModel.m in Sources */,
+				3D8ADB911DE3719000713E89 /* WTFTransModel.m in Sources */,
+				3D8ADB441DE3640800713E89 /* RHSocketConnection.m in Sources */,
+				3D8ADB711DE36C5100713E89 /* WTFHelpViewController.m in Sources */,
+				3D80F5721DF25EEE00BFB169 /* WTFMeViewController.m in Sources */,
+				3D10FD361DFB9C25001B10CE /* WTFForgetPasswordController.m in Sources */,
+				3D10B0291E20A668003B4885 /* WTFHelpHeaderView.m in Sources */,
+				3D8ADBA01DE372A700713E89 /* WTFPhysioModel.m in Sources */,
+				3DAF95FA1E00DAC0000FF8A1 /* WTFLoginTokenModel.m in Sources */,
+				3D8ADB071DE3618A00713E89 /* AppDelegate.m in Sources */,
+				3D10B02C1E20A6D7003B4885 /* WTFHelpButton.m in Sources */,
+				3D0CE8D01DFFC55C001B77AE /* WTFLoadingViewController.m in Sources */,
+				3D8ADB8D1DE3705900713E89 /* WTFPhysioController.m in Sources */,
+				3D8ADB9D1DE3728300713E89 /* WTFHeatingModel.m in Sources */,
+				3DAF96191E014950000FF8A1 /* WTFInfoCell.m in Sources */,
+				3D8C10121E003D6400D686AD /* WTFFlagDModel.m in Sources */,
+				3DAF96371E016911000FF8A1 /* WTFSexCell.m in Sources */,
+				3DAF962C1E015C93000FF8A1 /* WTFEditNameController.m in Sources */,
+				3D8ADB831DE36FE600713E89 /* WTFHeatingController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3D8ADAE91DE35C4300713E89 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3D8ADAEA1DE35C4300713E89 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3D8ADAED1DE35C4300713E89 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREFIX_HEADER = SmartMattress/Classes/Others/PrefixHeader.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3D8ADAEE1DE35C4300713E89 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = SmartMattress/Classes/Others/PrefixHeader.pch;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3D8ADAF01DE35C4300713E89 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 72F4F811BE1B79AD31A7E0BA /* Pods-SmartMattress.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = VZP5CZ5AYP;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/AFNetworking\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/CocoaAsyncSocket\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/DDQRCode\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/IQKeyboardManager\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/MJExtension\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/MJRefresh\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/SDWebImage\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/SVProgressHUD\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/TTRangeSlider\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/YLGIFImage\"",
+				);
+				GCC_PREFIX_HEADER = SmartMattress/Classes/Others/PrefixHeader.pch;
+				INFOPLIST_FILE = SmartMattress/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SmartMattress/Classes/Others/LibSimpleConfig",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lesmarthome.WTFSmartMattress;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		3D8ADAF11DE35C4300713E89 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 031D881215D3723341D1E189 /* Pods-SmartMattress.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = VZP5CZ5AYP;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/AFNetworking\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/CocoaAsyncSocket\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/DDQRCode\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/IQKeyboardManager\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/MJExtension\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/MJRefresh\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/SDWebImage\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/SVProgressHUD\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/TTRangeSlider\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/YLGIFImage\"",
+				);
+				GCC_PREFIX_HEADER = SmartMattress/Classes/Others/PrefixHeader.pch;
+				INFOPLIST_FILE = SmartMattress/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SmartMattress/Classes/Others/LibSimpleConfig",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lesmarthome.WTFSmartMattress;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3D8ADAD31DE35C4300713E89 /* Build configuration list for PBXProject "SmartMattress" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D8ADAED1DE35C4300713E89 /* Debug */,
+				3D8ADAEE1DE35C4300713E89 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D8ADAEF1DE35C4300713E89 /* Build configuration list for PBXNativeTarget "SmartMattress" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D8ADAF01DE35C4300713E89 /* Debug */,
+				3D8ADAF11DE35C4300713E89 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3D8ADAD01DE35C4300713E89 /* Project object */;
+}

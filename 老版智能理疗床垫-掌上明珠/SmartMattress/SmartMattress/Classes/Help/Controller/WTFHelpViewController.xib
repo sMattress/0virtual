@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WTFHelpViewController">
+            <connections>
+                <outlet property="helpTableView" destination="f4H-A7-uVG" id="2yz-k2-Zsf"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="odH-hg-B1n">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="f4H-A7-uVG">
+                    <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="2VC-HX-U8R"/>
+                        <outlet property="delegate" destination="-1" id="A15-Uv-c5e"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="f4H-A7-uVG" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="7cC-ix-7XB"/>
+                <constraint firstAttribute="trailing" secondItem="odH-hg-B1n" secondAttribute="trailing" id="7cF-u2-mXP"/>
+                <constraint firstAttribute="bottom" secondItem="odH-hg-B1n" secondAttribute="bottom" id="Ggb-eV-feU"/>
+                <constraint firstAttribute="trailing" secondItem="f4H-A7-uVG" secondAttribute="trailing" id="iTq-Ow-MkP"/>
+                <constraint firstItem="odH-hg-B1n" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="ikb-qj-fjq"/>
+                <constraint firstItem="f4H-A7-uVG" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="jHl-Xh-JCo"/>
+                <constraint firstAttribute="bottom" secondItem="f4H-A7-uVG" secondAttribute="bottom" constant="49" id="lJZ-W8-bOQ"/>
+                <constraint firstItem="odH-hg-B1n" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="n2x-s9-qYw"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+            <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+            <point key="canvasLocation" x="33.5" y="54.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="background" width="375" height="667"/>
+    </resources>
+</document>

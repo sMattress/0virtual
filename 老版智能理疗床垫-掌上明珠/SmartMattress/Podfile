@@ -1,0 +1,22 @@
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, "8.0"
+
+use_frameworks!
+
+target 'SmartMattress' do
+
+    pod 'AFNetworking'
+    pod 'MJExtension'
+    pod 'SVProgressHUD'
+    pod 'IQKeyboardManager'
+    pod 'CocoaAsyncSocket'
+    pod 'DDQRCode'
+    pod 'YLGIFImage'
+    pod 'SDWebImage'
+    pod 'MJRefresh'
+    pod 'TTRangeSlider'
+    
+    pod 'MOBFoundation_IDFA'
+    pod 'SMSSDK'
+    
+end

@@ -1,0 +1,48 @@
+//
+//  PrefixHeader.pch
+//  SmartMattress
+//
+//  Created by William Cai on 2016/11/22.
+//  Copyright © 2016年 lesmarthome. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import "UIView+Extension.h"
+#import "NSString+WTFExtension.h"
+#import "Const.h"
+
+#define RGBColor(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+#define GlobalBackground RGBColor(235, 235, 241)
+
+#define ScreenWidth [UIScreen mainScreen].bounds.size.width
+#define ScreenHeight [UIScreen mainScreen].bounds.size.height
+
+#define HardwareName [[NSUserDefaults standardUserDefaults] objectForKey:@"DeviceName"]
+#define HardwareID   [[NSUserDefaults standardUserDefaults] objectForKey:@"DeviceNumber"]
+
+#define serverPort 1234
+#define serverHost [[NSURL URLWithString:@"https://smartmattress.lesmarthome.com"] host]
+
+#define userDevice [[NSUserDefaults standardUserDefaults] objectForKey:@"account"]
+
+#define homeURL @"https://smartmattress.lesmarthome.com"
+
+#define DeviceFilePath [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject] stringByAppendingPathComponent:@"devices.data"]
+
+// Socket Debug
+#ifdef DEBUG
+#define RHSocketDebug
+#endif
+
+#ifdef RHSocketDebug
+#define RHSocketLog(format, ...) NSLog(format, ## __VA_ARGS__)
+#else
+#define RHSocketLog(format, ...)
+#endif
+
+#endif /* PrefixHeader_pch */

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>理疗帮助</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" href="../../../com/css/min/mui.min.css">
+		<link rel="stylesheet" href="../../../com/css/other/com.css">
+		<style>
+			h1,
+			h2,
+			h3,
+			h4,
+			h5 {
+				margin: 20px;
+			}
+			
+			p {
+				line-height: 1.4rem;
+				font-size: 1rem;
+				color: #000;
+				font-family: initial;
+				padding: 0 10px;
+				text-indent: 2rem;
+			}
+			
+			ul,
+			li {
+				margin: 0;
+				padding: 0;
+			}
+			
+			img {
+				display: block;
+				max-width: 95%;
+				margin: 10px auto;
+			}
+			table{
+				width: 98%;
+				margin: 0 auto;
+			}
+			tr{
+    			border-top: 1px solid #ccc;
+			}
+			td,th{
+				padding: 3px 7px;
+				border: 1px solid #ddd;
+			}
+			.td1{
+				width: 30px;
+				text-align: center;
+			}
+			.td2,.td3{
+				width: 100px;
+			}
+		</style>
+	</head>
+
+	<body id="body_id">
+		<div id="com_body">
+			<h2>常见问题及解决办法</h2>
+			<table>
+				<thead>
+					<tr>
+						<th class="td1">序号</th>
+						<th class="td2">常见问题</th>
+						<th>可能原因</th>
+						<th>解决方法</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="td1">1</td>
+						<td class="td2">提示床垫还未连上服务器</td>
+						<td class="td3">未打开电源</td>
+						<td>打开电源</td>
+					</tr>
+					<tr>
+						<td class="td1">2</td>
+						<td class="td2">提示床垫还未连上服务器</td>
+						<td class="td3">刚配完网，床垫注册到服务器需要一段时间</td>
+						<td>请等待十几秒</td>
+					</tr>
+					<tr>
+						<td class="td1">3</td>
+						<td class="td2">提示床垫还未连上服务器</td>
+						<td class="td3">床垫被复位</td>
+						<td> 请重新为床垫配网</td>
+					</tr>
+					<tr>
+						<td class="td1">4</td>
+						<td class="td2">提示数据更新失败</td>
+						<td class="td3">网络信号不好</td>
+						<td>请换网重试</td>
+					</tr>
+					<tr>
+						<td class="td1">5</td>
+						<td class="td2">提示请开启网络位置权限</td>
+						<td class="td3">未开启WIFI权限</td>
+						<td>在应用管理中开启权限，若为华为手机，请选择“信任此应用”这个选项</td>
+					</tr>
+					<tr>
+						<td class="td1">6</td>
+						<td class="td2">提示请开启摄像头权限</td>
+						<td class="td3">未开启摄像头权限</td>
+						<td>在应用管理中开启权限，若为华为手机，请选择“信任此应用”这个选项</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</body>
+	<script src="../../../com/js/min/mui.min.js"></script>
+	<script src="../../../com/js/other/data.js"></script>
+	<script src="../../../com/js/other/com.js"></script>
+	<script src="../../js/other/liliao.com.js"></script>
+	<script type="text/javascript">
+		NOW = LILIAO;
+		LILIAO.nav.id = 'liliao_help';
+		mui.plusReady(function() { 
+			COM.addHN(true, '常见问题', CONST_MENU.home, true);
+		});
+	</script>
+
+</html>

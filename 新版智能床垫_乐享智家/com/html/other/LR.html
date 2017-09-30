@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>登录和注册</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" href="../../css/min/mui.min.css">
+		<link rel="stylesheet" href="../../css/other/com.css">
+	</head>
+	
+	<body id="body_id" style="background: url(../../img/other/com_bg.png);background-size: 100% 100%">
+		<div id="com_body">
+			<div id="com_LR">
+				<!--login图标-->
+				<img src="../../img/other/LR_logo.png" alt="logo"/>
+				<!--登录注册按钮-->
+				
+				<div class="hover elem-click" id="login_change">登录</div>
+				<div class="elem-click" id="register_change">注册</div>
+				<!--输入区-->
+				<form>
+					<div class="mui-input-row">
+						<label><span class="mui-icon mui-icon-person"></span></label>
+						<input type="text" value="" class="mui-input-clear" placeholder="请输入您的手机号" id="account">
+					</div>
+					<!--15882322739-->
+					<div class="mui-input-row">
+						<label><span class="mui-icon mui-icon-locked"></span></label>
+						<input type="password" value="" class="mui-input-clear" placeholder="请输入您的密码" id="password">
+					</div>
+					<!--q1111111-->
+					<!--登录按钮-->
+					<button type="button" class="mui-btn mui-btn-block elem-click login-go" id="login_go">登录</button>
+					<button type="button" class="mui-btn mui-btn-block elem-click register-go" id="register_go">注册</button>
+
+					<!--忘记密码-->
+					<a href="#" class="miss-pwd" id="forgetPassword">忘记密码？</a>
+				</form>
+			</div>
+		</div>
+	</body>
+
+	<script src="../../js/min/mui.min.js"></script>
+	<script src="../../js/other/data.js"></script>
+	<script src="../../js/min/md5.js"></script>
+	<script src="../../js/other/com.js"></script>
+	<script src="../../js/other/device.js"></script>
+	<script src="../../js/other/LR.js"></script>
+	<script type="text/javascript">
+		console.log('LR页面已执行');
+		NOW = COMMON;
+		mui.plusReady(LR.start);
+	</script>
+</html>

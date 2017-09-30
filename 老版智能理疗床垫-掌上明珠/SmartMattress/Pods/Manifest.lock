@@ -1,0 +1,60 @@
+PODS:
+  - AFNetworking (3.1.0):
+    - AFNetworking/NSURLSession (= 3.1.0)
+    - AFNetworking/Reachability (= 3.1.0)
+    - AFNetworking/Security (= 3.1.0)
+    - AFNetworking/Serialization (= 3.1.0)
+    - AFNetworking/UIKit (= 3.1.0)
+  - AFNetworking/NSURLSession (3.1.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.1.0)
+  - AFNetworking/Security (3.1.0)
+  - AFNetworking/Serialization (3.1.0)
+  - AFNetworking/UIKit (3.1.0):
+    - AFNetworking/NSURLSession
+  - CocoaAsyncSocket (7.5.1):
+    - CocoaAsyncSocket/GCD (= 7.5.1)
+  - CocoaAsyncSocket/GCD (7.5.1)
+  - DDQRCode (1.0.1)
+  - IQKeyboardManager (4.0.7)
+  - MJExtension (3.0.13)
+  - MJRefresh (3.1.12)
+  - SDWebImage (3.8.2):
+    - SDWebImage/Core (= 3.8.2)
+  - SDWebImage/Core (3.8.2)
+  - SVProgressHUD (2.1.2)
+  - TTRangeSlider (1.0.5)
+  - YLGIFImage (0.11)
+  - ZRQRCodeViewController (3.1.5)
+
+DEPENDENCIES:
+  - AFNetworking
+  - CocoaAsyncSocket
+  - DDQRCode
+  - IQKeyboardManager
+  - MJExtension
+  - MJRefresh
+  - SDWebImage
+  - SVProgressHUD
+  - TTRangeSlider
+  - YLGIFImage
+  - ZRQRCodeViewController
+
+SPEC CHECKSUMS:
+  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  CocoaAsyncSocket: e0a7e93b2ffa411592ff87e58524fbbc9b95b4fa
+  DDQRCode: a4b0284bcea4446b9d6cb64cb0661025304b6951
+  IQKeyboardManager: 69002bb4fea60596b710e57d426abc00e5063630
+  MJExtension: 5932755f451458eefa24239358817f8d291240c7
+  MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
+  SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
+  SVProgressHUD: c404a55d78acbeb7ebb78b76d3faf986475a6994
+  TTRangeSlider: 2f2ce4a33b32bb323c6575b9f5161c4664459c58
+  YLGIFImage: c0ae132fe80e5282b2762a97d14e23ba71a748ae
+  ZRQRCodeViewController: 5bafe127c0b09a65b88db5b05b45ce72f2b3e5b0
+
+PODFILE CHECKSUM: 4820e2773165723ea2c774549afa5e488abd9907
+
+COCOAPODS: 1.0.1

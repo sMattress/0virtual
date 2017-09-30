@@ -1,0 +1,96 @@
+{
+  "liliao/html/device/liliao_device_list.html": {
+    "href": "liliao/html/device/liliao_device_list.html",
+    "resources": [
+      "com/js/min/mui.min.js",
+      "com/js/min/mui.pullToRefresh.js",
+      "com/js/other/data.js",
+      "com/js/min/md5.js",
+      "com/js/min/qrcode.js",
+      "com/js/other/com.js",
+      "com/js/other/device.js",
+      "com/css/min/mui.min.css",
+      "com/css/other/com.css",
+      "com/img/other/device_new.png",
+      "com/img/other/device_old.png"
+    ],
+    "refer": [],
+    "priority": 0
+  },
+  "com/html/other/device_add_ios.html": {
+    "href": "com/html/other/device_add_ios.html",
+    "resources": [
+      "com/js/min/mui.min.js",
+      "com/js/min/md5.js",
+      "com/js/other/data.js",
+      "com/js/other/com.js",
+      "com/js/other/device.js",
+      "com/js/other/device.add.ios.js",
+      "com/css/min/mui.min.css",
+      "com/css/other/com.css"
+    ],
+    "refer": [
+      "liliao/html/device/liliao_device_list.html"
+    ],
+    "priority": 0
+  },
+  "com/html/other/device_add_android.html": {
+    "href": "com/html/other/device_add_android.html",
+    "resources": [
+      "com/js/min/mui.min.js",
+      "com/js/min/md5.js",
+      "com/js/other/data.js",
+      "com/js/other/com.js",
+      "com/js/other/device.js",
+      "com/js/other/wifi.js",
+      "com/js/other/device.add.android.js",
+      "com/css/min/mui.min.css",
+      "com/css/other/com.css"
+    ],
+    "refer": [
+      "liliao/html/device/liliao_device_list.html"
+    ],
+    "priority": 0
+  },
+  "com/html/other/LR.html": {
+    "href": "com/html/other/LR.html",
+    "resources": [
+      "com/js/min/mui.min.js",
+      "com/js/other/data.js",
+      "com/js/min/md5.js",
+      "com/js/other/com.js",
+      "com/js/other/device.js",
+      "com/js/other/LR.js",
+      "com/css/min/mui.min.css",
+      "com/css/other/com.css",
+      "com/img/other/LR_logo.png",
+      "com/img/other/com_bg.png"
+    ],
+    "refer": [
+      "com/html/other/device_add_ios.html",
+      "com/html/other/device_add_android.html",
+      "liliao/html/device/liliao_device_list.html"
+    ],
+    "priority": 0
+  },
+  "com/html/other/tmp.html": {
+    "href": "com/html/other/tmp.html",
+    "resources": [
+      "com/js/min/mui.min.js",
+      "com/js/other/data.js",
+      "com/js/min/md5.js",
+      "com/js/other/com.js",
+      "com/img/other/right.png",
+      "com/js/min/mui.pullToRefresh.js",
+      "com/js/other/device.js",
+      "com/css/min/mui.min.css",
+      "com/css/other/com.css",
+      "com/css/min/mui.picker.min.css"
+    ],
+    "refer": [
+      "com/html/other/LR.html",
+      "liliao/html/device/liliao_device_list.html"
+    ],
+    "priority": 0
+  }
+}

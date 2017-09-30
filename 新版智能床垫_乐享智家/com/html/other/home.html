@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>乐享智家APP 主页</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" href="../../css/min/mui.min.css">
+		<link rel="stylesheet" href="../../css/other/com.css">
+	</head>
+
+	<body id="body_id">
+		<div id="com_body">
+			<div id="com_home">
+				<h4>设备显示样例(九宫格式):</h4>
+				<div class="mui-content">
+					<ul id="home_device" class="mui-table-view mui-grid-view mui-grid-9">
+						<!-- 由HOME.showDevice 添加 -->
+					</ul>
+				</div>
+				<h4>轮播图显示样例:</h4>
+				<div class="mui-content">
+					<ul class="mui-table-view mui-table-view-chevron">
+						<li id="switch" class="mui-table-view-cell">
+							定时轮播
+							<div class="mui-switch">
+								<div class="mui-switch-handle"></div>
+							</div>
+						</li>
+					</ul>
+					<div id="slider" class="mui-slider">
+						<div class="mui-slider-group mui-slider-loop">
+							<!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+							<div class="mui-slider-item mui-slider-item-duplicate">
+								<a href="#">
+									<img src="../../img/other/tmp/yuantiao.jpg">
+									<p class="mui-slider-title">标题4</p>
+								</a>
+							</div>
+							<div class="mui-slider-item">
+								<a href="#">
+									<img src="../../img/other/tmp/shuijiao.jpg">
+									<p class="mui-slider-title">标题1</p>
+								</a>
+							</div>
+							<div class="mui-slider-item">
+								<a href="#">
+									<img src="../../img/other/tmp/muwu.jpg">
+									<p class="mui-slider-title">标题2</p>
+								</a>
+							</div>
+							<div class="mui-slider-item">
+								<a href="#">
+									<img src="../../img/other/tmp/cbd.jpg">
+									<p class="mui-slider-title">标题3</p>
+								</a>
+							</div>
+							<div class="mui-slider-item">
+								<a href="#">
+									<img src="../../img/other/tmp/yuantiao.jpg">
+									<p class="mui-slider-title">标题4</p>
+								</a>
+							</div>
+							<!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+							<div class="mui-slider-item mui-slider-item-duplicate">
+								<a href="#">
+									<img src="../../img/other/tmp/shuijiao.jpg">
+									<p class="mui-slider-title">标题1</p>
+								</a>
+							</div>
+						</div>
+						<div class="mui-slider-indicator mui-text-right">
+							<div class="mui-indicator mui-active"></div>
+							<div class="mui-indicator"></div>
+							<div class="mui-indicator"></div>
+							<div class="mui-indicator"></div>
+						</div>
+					</div>
+				</div>
+				<h4>普通消息显示样例:</h4>
+				<div class="mui-card">
+					<div class="mui-card-content">
+						<div class="mui-card-content-inner">
+							这是一条普通的消息
+						</div>
+					</div>
+				</div>
+				<h4>含有页眉页脚的消息:</h4>
+				<div class="mui-card">
+					<div class="mui-card-header">页眉</div>
+					<div class="mui-card-content">
+						<div class="mui-card-content-inner">
+							这是一条带有页眉和页脚的消息
+						</div>
+					</div>
+					<div class="mui-card-footer">页脚</div>
+				</div>
+				<h4>含有图片的消息:</h4>
+				<div class="mui-card">
+					<div class="mui-card-header mui-card-media" style="height:40vw;background-image:url(../../img/other/tmp/cbd.jpg)"></div>
+					<div class="mui-card-content">
+						<div class="mui-card-content-inner">
+							<p>Posted on January 18, 2016</p>
+							<p style="color: #333;">这里显示文章摘要，让读者对文章内容有个粗略的概念...</p>
+						</div>
+					</div>
+					<div class="mui-card-footer">
+						<a class="mui-card-link">Like</a>
+						<a class="mui-card-link">Read more</a>
+					</div>
+				</div>
+				<h4>带有发布信息的消息:</h4>
+				<div class="mui-card">
+					<div class="mui-card-header mui-card-media">
+						<img src="../../img/other/tmp/logo.png">
+						<div class="mui-media-body">
+							小M
+							<p>发表于 2016-06-30 15:30</p>
+						</div>
+					</div>
+					<div class="mui-card-content">
+						<img src="../../img/other/tmp/yuantiao.jpg" alt="" width="100%">
+					</div>
+					<div class="mui-card-footer">
+						<a class="mui-card-link">Like</a>
+						<a class="mui-card-link">Comment</a>
+						<a class="mui-card-link">Read more</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+
+	<script src="../../js/min/mui.min.js"></script>
+	<script src="../../js/min/md5.js"></script>
+	<script src="../../js/other/data.js"></script>
+	<script src="../../js/other/com.js"></script>
+	<script src="../../js/other/device.js"></script>
+	<script src="../../js/other/home.js"></script>
+	<script type="text/javascript">
+		NOW = COMMON;
+		mui.plusReady(HOME.start);
+		//HOME.start();
+	</script>
+
+</html>

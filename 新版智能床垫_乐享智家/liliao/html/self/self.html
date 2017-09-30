@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>我的页面</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" type="text/css" href="../../../com/css/min/mui.min.css"/>
+		<link rel="stylesheet" type="text/css" href="../../../com/css/other/com.css"/>
+	</head>
+
+	<body id="body_id">
+		<div id="com_body">
+			<div id="self">
+				<div class="icon_t">
+					<div id="user_img" class="img_box">
+						<a href="javascript:;" class="imageup">
+							<img src="../../../com/img/other/LR_logo.png" />
+						</a>
+					</div>
+					<h1 id="user_name" class="user_id">
+
+					</h1>
+				</div>
+				<ul id="self_box" class="mui-table-view mui-table-view-chevron">
+					<li class="mui-table-view-cell" id="self_info">
+						<a class="mui-navigate-right">
+							<span class="mui-icon mui-icon-person"></span>个人信息
+						</a>
+					</li>
+					<!--<li class="mui-table-view-cell" id="device">
+						<a class="mui-navigate-right">
+							<span class="mui-icon mui-icon-gear"></span>设备管理
+						</a>
+					</li>-->
+					<li class="mui-table-view-cell" id="check_update" style="display: none;">
+						<a class="mui-navigate-right">
+							<span class="mui-icon mui-icon-download"></span>检查更新
+						</a>
+					</li>
+					<li class="mui-table-view-cell" id="login_out">
+						<a class="mui-navigate-right">
+							<span class="mui-icon mui-icon-undo"></span>退出登录
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="../../../com/js/min/mui.min.js" ></script>
+	<script type="text/javascript" src="../../../com/js/min/md5.js" ></script>
+	<script type="text/javascript" src="../../../com/js/min/mui.view.js" ></script>
+	<script type="text/javascript" src="../../../com/js/other/data.js" ></script>
+	<script type="text/javascript" src="../../../com/js/other/com.js" ></script>
+	<script type="text/javascript" src="../../../com/js/other/self.js" ></script>
+	<script type="text/javascript">
+		NOW = LILIAO;
+		LILIAO.nav.id = 'self';
+		mui.plusReady(SELF.start);
+	</script>
+
+</html>

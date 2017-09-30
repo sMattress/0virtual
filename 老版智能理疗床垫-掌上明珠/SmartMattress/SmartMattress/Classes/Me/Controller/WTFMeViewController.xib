@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WTFMeViewController">
+            <connections>
+                <outlet property="userImage" destination="IQM-Sp-zcY" id="YAv-zP-CsG"/>
+                <outlet property="userNameLabel" destination="WIa-4d-84e" id="mYw-Qo-vz0"/>
+                <outlet property="userSettingTableView" destination="NRh-Fa-QsU" id="aQL-Y2-zBM"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person_background" translatesAutoresizingMaskIntoConstraints="NO" id="1T4-CF-a3Q">
+                    <rect key="frame" x="0.0" y="64" width="375" height="250.5"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="1T4-CF-a3Q" secondAttribute="height" multiplier="375:250" id="5Hh-RT-3cc"/>
+                    </constraints>
+                </imageView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="NRh-Fa-QsU">
+                    <rect key="frame" x="0.0" y="319.5" width="375" height="150"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="150" id="uBE-tE-a8S"/>
+                    </constraints>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="bi9-h4-YTL"/>
+                        <outlet property="delegate" destination="-1" id="oZy-FX-jzL"/>
+                    </connections>
+                </tableView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="default_image" translatesAutoresizingMaskIntoConstraints="NO" id="IQM-Sp-zcY">
+                    <rect key="frame" x="137.5" y="120" width="100" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="2rg-Vv-vA8"/>
+                        <constraint firstAttribute="width" secondItem="IQM-Sp-zcY" secondAttribute="height" multiplier="1:1" id="DEC-Oa-h2U"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="乐享智家" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="WIa-4d-84e">
+                    <rect key="frame" x="125.5" y="253" width="124" height="30.5"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="WIa-4d-84e" secondAttribute="height" multiplier="4:1" id="jVK-dI-6OG"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                    <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.60426476883561642" colorSpace="custom" customColorSpace="sRGB"/>
+                    <size key="shadowOffset" width="2" height="2"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="NRh-Fa-QsU" secondAttribute="trailing" id="Ark-R9-moS"/>
+                <constraint firstItem="WIa-4d-84e" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="bottom" multiplier="0.379" id="Ez9-7m-bDq"/>
+                <constraint firstItem="1T4-CF-a3Q" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="Mqq-43-3Wg"/>
+                <constraint firstItem="NRh-Fa-QsU" firstAttribute="top" secondItem="1T4-CF-a3Q" secondAttribute="bottom" constant="5" id="XDb-mj-8mz"/>
+                <constraint firstItem="WIa-4d-84e" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.33" id="ZV6-mc-MPD"/>
+                <constraint firstItem="IQM-Sp-zcY" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="bottom" multiplier="0.18" id="ZcM-sp-VEn"/>
+                <constraint firstItem="IQM-Sp-zcY" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="cpB-5t-9Gg"/>
+                <constraint firstItem="NRh-Fa-QsU" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="dKA-vg-QGy"/>
+                <constraint firstAttribute="trailing" secondItem="1T4-CF-a3Q" secondAttribute="trailing" id="jOd-mJ-fe3"/>
+                <constraint firstItem="1T4-CF-a3Q" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="nHf-j3-NgU"/>
+                <constraint firstItem="WIa-4d-84e" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="tqF-XJ-Qqp"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+            <point key="canvasLocation" x="35.5" y="53.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="default_image" width="269" height="266"/>
+        <image name="person_background" width="375" height="250"/>
+    </resources>
+</document>

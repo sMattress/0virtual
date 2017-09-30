@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>远程控制</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" href="../../../com/css/min/mui.min.css">
+		<link rel="stylesheet" href="../../../com/css/min/mui.previewimage.css" />
+		<link rel="stylesheet" href="../../../com/css/other/com.css">
+		<style>
+			h1,
+			h2,
+			h3,
+			h4,
+			h5 {
+				margin: 20px;
+			}
+			
+			p {
+				line-height: 1.4rem;
+				font-size: 1rem;
+				color: #000;
+				font-family: initial;
+				padding: 0 10px;
+				text-indent: 2rem;
+			}
+
+			img {
+				display: block;
+				max-width: 95%;
+				margin: 10px auto;
+				width: 220px;
+				height: 391px;
+			}
+		</style>
+	</head>
+
+	<body id="body_id">
+		<div id="com_body">
+			<h2>远程控制</h2>
+			<p>远程控制与遥控器的功能完全相同，可同时控制双人床左侧和右侧。页面上方的方框内显示的是您调节的目标温度和当前智能床垫的状态。
+				<strong>加热功能和理疗功能，两者二选一。</strong>
+			</p>
+			<ul>
+				<li>当选择加热时，理疗功能关闭，此时可设置您期望的加热温度。可设置的温度在25℃-45℃之间；</li>
+				<li>当选择理疗时，加热功能关闭，此时您可享受理疗功能；</li>
+				<li>当点击开关键，床垫将进入待机模式。</li>
+			</ul>
+			<img src="../../img/help/device_management.png" data-preview-src="" data-preview-group="1" alt="">
+		</div>
+	</body>
+	<script src="../../../com/js/min/mui.min.js"></script>
+	<script src="../../../com/js/min/mui.zoom.js"></script>
+	<script src="../../../com/js/min/mui.previewimage.js"></script>
+	<script src="../../../com/js/other/data.js"></script>
+	<script src="../../../com/js/other/com.js"></script>
+	<script src="../../js/other/liliao.com.js"></script>
+	<script type="text/javascript">
+		NOW = LILIAO;
+		LILIAO.nav.id = 'liliao_help';
+		mui.plusReady(function() { 
+			mui.previewImage && mui.previewImage();
+			COM.addHN(true, '远程控制', CONST_MENU.home, true);
+		});
+	</script>
+
+</html>

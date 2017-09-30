@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WTFSettingViewController">
+            <connections>
+                <outlet property="button0" destination="tIq-oj-qXv" id="K3N-xE-LPj"/>
+                <outlet property="button1" destination="HXx-6F-XD8" id="zeA-zl-RBh"/>
+                <outlet property="button2" destination="4gL-uN-w6J" id="QXV-Ly-80k"/>
+                <outlet property="titlesView" destination="2pB-cx-pDk" id="EC3-KK-QSN"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="Fzz-b0-ste" userLabel="Background">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2pB-cx-pDk" userLabel="TitlesView">
+                    <rect key="frame" x="0.0" y="64" width="375" height="80"/>
+                    <subviews>
+                        <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tIq-oj-qXv" userLabel="远程">
+                            <rect key="frame" x="0.0" y="0.0" width="125" height="80"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <state key="normal" title="远程控制">
+                                <color key="titleColor" red="0.60784313729999995" green="0.60784313729999995" blue="0.60784313729999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="disabled" title="远程控制">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="selected">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HXx-6F-XD8" userLabel="加热">
+                            <rect key="frame" x="125" y="0.0" width="125" height="80"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <state key="normal" title="加热预约">
+                                <color key="titleColor" red="0.60784313729999995" green="0.60784313729999995" blue="0.60784313729999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="disabled" title="加热预约">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="selected">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4gL-uN-w6J" userLabel="理疗">
+                            <rect key="frame" x="250" y="0.0" width="125" height="80"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <state key="normal" title="理疗预约">
+                                <color key="titleColor" red="0.60784313729999995" green="0.60784313729999995" blue="0.60784313729999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="disabled" title="理疗预约">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="selected">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="4gL-uN-w6J" firstAttribute="width" secondItem="tIq-oj-qXv" secondAttribute="width" id="2YN-hF-sbj"/>
+                        <constraint firstItem="HXx-6F-XD8" firstAttribute="leading" secondItem="tIq-oj-qXv" secondAttribute="trailing" id="DDY-RX-4VN"/>
+                        <constraint firstItem="4gL-uN-w6J" firstAttribute="top" secondItem="2pB-cx-pDk" secondAttribute="top" id="IFq-jl-eJP"/>
+                        <constraint firstAttribute="bottom" secondItem="4gL-uN-w6J" secondAttribute="bottom" id="Jxd-iq-Iv4"/>
+                        <constraint firstAttribute="bottom" secondItem="tIq-oj-qXv" secondAttribute="bottom" id="Pie-Wl-6dS"/>
+                        <constraint firstItem="HXx-6F-XD8" firstAttribute="top" secondItem="2pB-cx-pDk" secondAttribute="top" id="WpT-6v-Vsh"/>
+                        <constraint firstItem="tIq-oj-qXv" firstAttribute="leading" secondItem="2pB-cx-pDk" secondAttribute="leading" id="fAY-30-uSR"/>
+                        <constraint firstItem="4gL-uN-w6J" firstAttribute="height" secondItem="tIq-oj-qXv" secondAttribute="height" id="lUi-37-6Q1"/>
+                        <constraint firstItem="HXx-6F-XD8" firstAttribute="width" secondItem="tIq-oj-qXv" secondAttribute="width" id="lVq-HG-jGK"/>
+                        <constraint firstAttribute="trailing" secondItem="4gL-uN-w6J" secondAttribute="trailing" id="la5-aw-zxf"/>
+                        <constraint firstAttribute="bottom" secondItem="HXx-6F-XD8" secondAttribute="bottom" id="lk3-c8-X5A"/>
+                        <constraint firstItem="HXx-6F-XD8" firstAttribute="height" secondItem="tIq-oj-qXv" secondAttribute="height" id="pZV-vs-2UG"/>
+                        <constraint firstItem="tIq-oj-qXv" firstAttribute="top" secondItem="2pB-cx-pDk" secondAttribute="top" id="qWL-c4-Izi"/>
+                        <constraint firstItem="4gL-uN-w6J" firstAttribute="leading" secondItem="HXx-6F-XD8" secondAttribute="trailing" id="rQw-4Y-3qO"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="2pB-cx-pDk" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="I4Q-Z6-6aa"/>
+                <constraint firstAttribute="trailing" secondItem="Fzz-b0-ste" secondAttribute="trailing" id="J5M-ue-qZq"/>
+                <constraint firstAttribute="trailing" secondItem="2pB-cx-pDk" secondAttribute="trailing" id="W9E-JQ-GPU"/>
+                <constraint firstItem="2pB-cx-pDk" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.12" id="X9X-3l-8Ez"/>
+                <constraint firstAttribute="bottom" secondItem="Fzz-b0-ste" secondAttribute="bottom" id="ict-zG-eDE"/>
+                <constraint firstItem="2pB-cx-pDk" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ltf-1t-X0O"/>
+                <constraint firstItem="Fzz-b0-ste" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="zAg-oQ-8ee"/>
+                <constraint firstItem="Fzz-b0-ste" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="zgO-ei-dPV"/>
+            </constraints>
+            <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+            <point key="canvasLocation" x="33.5" y="56.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="background" width="375" height="667"/>
+    </resources>
+</document>
