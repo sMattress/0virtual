@@ -81,11 +81,6 @@ static NSString * const KnowledgeCellID = @"KnowledgeCell";
                                @"title" : @"什么是智能温度曲线",
                                @"image" : @"knowledge_brief_2_img",
                                @"content" : @"本智能理疗床垫，可根据人体在睡眠期间基础体温的上升和下降曲线以及在整个睡眠期间内人体体温的周期性变化规律，智能地调节加热温度，从而使床垫温度始终随着体温的变化而变化，使床垫在您睡眠期间不致于过热或过冷，科学地提高睡眠的舒适性。"
-                               },
-                           @{
-                               @"title" : @"公司简介",
-                               @"image" : @"corporate_brief_img",
-                               @"content" : @"成都乐享智家科技有限责任公司（Chengdu LeSmartHome Tech Co.Ltd，简称“乐享智家”）是一家高技术创新企业，2014年在四川省成都市高新区注册成立，公司专注研发、生产和销售智能健康产品。"
                                }
                            ];
     
@@ -122,10 +117,7 @@ static NSString * const KnowledgeCellID = @"KnowledgeCell";
             
         case 2:
         {
-            _helpVC.helpURL = @"http://www.zsmz.com";
-            _helpVC.title = @"公司简介";
-            
-            [self.navigationController pushViewController:_helpVC animated:YES];
+
         }
             break;
             
