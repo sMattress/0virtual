@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>乐享智家APP 主页</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" href="../../css/min/mui.min.css">
+		<link rel="stylesheet" href="../../css/other/com.css">
+	</head>
+
+	<body id="body_id">
+		<div id="com_body">
+			<div id="com_list" style="position: inherit;">
+				<div class="home-elem mui-card" id="home_device">
+					<div class="home-elem-title">
+						<span>绑定设备：</span>
+						<span index="device" class="mui-icon mui-icon-gear elem-click"></span>
+					</div>
+					<ul>
+						<!-- 通过 home.js _showDevice 填充 -->
+					</ul>
+				</div>
+			</div>
+
+			<div class="com-home-box" style="display: none;">
+				<h4>心理讲解:</h4>
+				<ul class="mui-table-view" id="psy_explan">
+					<li class="mui-table-view-cell" title="20170701/Approaching Nirvana - You.mp3">
+						<a class="mui-navigate-right">
+							Approaching Nirvana - You.mp3
+						</a>
+					</li>
+					<li class="mui-table-view-cell" title="20170701/TheFatRat - Unity.mp3">
+						<a class="mui-navigate-right">
+							TheFatRat - Unity.mp3
+						</a>
+					</li>
+					<li class="mui-table-view-cell" title="20170701/Tobu - Life.mp3">
+						<a class="mui-navigate-right">
+							Tobu - Life.mp3
+						</a>
+					</li>
+				</ul>
+				<div id="psy_explan_mp3">
+
+				</div>
+
+			</div>
+		</div>
+		<nav id="com_device_mana" class="mui-bar mui-bar-tab">
+			<a title="new" class="mui-tab-item device-new">
+				<img src="../../img/other/device_new.png" /> 配置新设备
+			</a>
+			<a title="old" class="mui-tab-item device-old">
+				<img src="../../img/other/device_old.png" /> 添加老设备
+			</a>
+		</nav>
+	</body>
+
+	<script src="../../js/min/mui.min.js"></script>
+	<script src="../../js/min/md5.js"></script>
+	<script src="../../js/other/data.js"></script>
+	<script src="../../js/other/com.js"></script>
+	<script src="../../js/other/device.js"></script>
+	<script src="../../js/other/home.js"></script>
+	<script type="text/javascript">
+		NOW = COMMON;
+		mui.plusReady(HOME.start);
+//				HOME.start();
+	</script>
+
+</html>

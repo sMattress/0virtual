@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>添加新设备_ios版</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" href="../../css/min/mui.min.css">
+		<link rel="stylesheet" href="../../css/other/com.css">
+		<style>
+			#device_add_tips {
+				padding-left: 20px;
+			}
+			
+			#device_add_tips li {
+				list-style: inherit;
+			}
+		</style>
+	</head>
+	<style>
+
+	</style>
+
+	<body id="body_id">
+		<div id="com_body">
+			<div id="ad_box" style="display: none;">
+				<p>
+					请确认床垫<span>电源已打开</span>，wifi指示灯在闪烁；
+				</p>
+				<div id="wifi_pwd_box" style="display: none;" >
+					<form name="form_wmode">
+						<div  class="daa-select com-clear">
+							<span>加密类型:</span>
+							<select name="__SL_P_WST" onchange="showWST(this)">
+								<option selected="selected" value="AUTO">AUTO</option>
+								<option value="OPEN">OPEN</option>
+								<option value="WPA2PSK">WPA2PSK</option>
+								<option value="WPAPSK">WPAPSK</option>
+								<option value="WEP">WEP</option>
+							</select>
+						</div>
+						<div id="d_WSF" class="daa-select com-clear" style="display: none;">
+							<span>加密算法:</span>
+							<select name="__SL_P_WSF" onchange="showWSF(this)" selected="selected" >
+								<option selected="selected" value="AES">AES</option>
+								<option value="TKIP">TKIP</option>
+								<option value="HEX">HEX</option>
+								<option value="ASCII">ASCII</option>
+								<option value="NONE">NONE</option>
+							</select>
+						</div>
+						<input name="__SL_P_WSK" type="text" value="" placeholder="WIFI密码"/>
+					</form>
+					
+				</div>
+				<div id="android_add_box" class="mui-content" style="display: none;">
+					<ul class="mui-table-view mui-table-view-chevron">
+						
+					</ul>
+				</div>
+				<div class="adb-btn-line com-clear">
+					<button type="button" class="mui-btn mui-btn-link adb-prev">
+			            <span class="mui-icon mui-icon-back"></span>
+			            	上一步
+			        </button>
+					<button type="button" class="mui-btn mui-btn-link adb-center">
+				    	刷新
+			       </button>
+					<button type="button" class="mui-btn mui-btn-link adb-next">
+		            	下一步
+			            <span class="mui-icon mui-icon-forward"></span>
+			       </button>
+				</div>
+
+			</div>
+			<div id="device_add_iframe" style="display: none;">
+				<iframe id="wifiSet"></iframe>
+				<iframe id="wifistatus"></iframe>
+				<iframe id="site_survey"></iframe>
+			</div>
+			<div id="hidden_wifi_list" style="display: none;">
+				
+			</div>
+		</div>
+	</body>
+	<script src="../../js/min/mui.min.js"></script>
+	<script src="../../js/min/md5.js"></script>
+	<script src="../../js/other/data.js"></script>
+	<script src="../../js/other/com.js"></script>
+	<script src="../../js/other/device.js"></script>
+	<script src="../../js/other/device.add.ios.js"></script>
+
+	<script type="text/javascript">
+		NOW = COMMON;
+		mui.plusReady(DEVICE_ADD_IOS.start);
+		var WST = "AUTO";
+		var WSF = "AES";
+		var f = document.form_wmode;
+		var showWST = function(e){
+			f.__SL_P_WSF.options.length=0;
+			WST = e.value;
+			WSF = "";
+			if(WST === 'AUTO'){
+				document.getElementById('d_WSF').style.display = 'none';
+				f.__SL_P_WSK.type = "text";
+			} else if(WST === "OPEN")
+			{
+				document.getElementById('d_WSF').style.display = 'none';
+				f.__SL_P_WSK.type = "hidden";
+			}else if(WST !="WEP")
+			{
+				f.__SL_P_WSK.type = "text";
+				f.__SL_P_WSF.options.add(new Option("AES","AES")); 
+				f.__SL_P_WSF.options.add(new Option("TKIP","TKIP")); 
+				WSF = f.__SL_P_WSF.value = "AES";
+				document.getElementById('d_WSF').style.display = 'block';
+			}else{
+				f.__SL_P_WSK.type = "text";
+				f.__SL_P_WSF.options.add(new Option("ASCII","ASCII")); 
+				f.__SL_P_WSF.options.add(new Option("HEX","HEX")); 
+				WSF = f.__SL_P_WSF.value = "ASCII";
+				document.getElementById('d_WSF').style.display = 'block';
+			}
+			console.log(e.value);
+		}
+		var showWSF = function(e){
+			WSF = e.value;
+		}
+	</script>
+
+</html>

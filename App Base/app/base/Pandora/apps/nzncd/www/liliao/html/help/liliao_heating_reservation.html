@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>理疗帮助</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" href="../../../com/css/min/mui.min.css">
+		<link rel="stylesheet" href="../../../com/css/min/mui.previewimage.css" />
+		<link rel="stylesheet" href="../../../com/css/other/com.css">
+		<style>
+			h1,
+			h2,
+			h3,
+			h4,
+			h5 {
+				margin: 20px;
+			}
+			
+			p {
+				line-height: 1.4rem;
+				font-size: 1rem;
+				color: #000;
+				font-family: initial;
+				padding: 0 10px;
+				text-indent: 2rem;
+			}
+			
+			ul,
+			li {
+				margin: 0;
+				padding: 0;
+			}
+			
+			img {
+				display: block;
+				max-width: 95%;
+				margin: 10px auto;
+				width: 220px;
+				height: 391px;
+			}
+		</style>
+	</head>
+
+	<body id="body_id">
+		<div id="com_body">
+			<h2>加热预约</h2>
+			<p> 一周七天，每天可预约不同时间点，和加热温度。如需取消，在APP加热预约界面，取消预约即可。
+			</p>
+			<ol>
+				<li>
+					<strong>加热温度：</strong> 可分别设置双人床左侧或右侧，根据自己的要求设置自己期望的加热温度。
+
+					<p>根据研究，人体在睡觉时周围最适温度为32℃-34℃，但适宜温度因人而异，您可自行调节。</p>
+				</li>
+				<li>
+					<strong>预约开机时间：</strong> 设置床垫自动开启加热的时间。
+					<p>本床垫可自动探测是否有人在床垫上。如开机时间开始后，智能床垫自动开启加热，但 30分钟内如探测无人，则自动关闭加热。</p>
+				</li>
+				<li>
+					<strong>智能温度曲线：</strong> 本智能理疗床垫，可根据人体在睡眠期间基础体温的上升和下降曲线以及在整个睡眠期间内人体体温的周期性变化规律，智能地调节加热温度，从而使床垫温度始终随着体温的变化而变化，使床垫在您睡眠期间不致于过热或过冷，科学地提高睡眠的舒适性。
+					<p>人体基础体温变化规律：在健康状态时，人体的恒定体温是指一个温度范围，同一人体温在一日内也不完全一样，昼夜间体温的波动可达2℃左右。</p>
+					<p>睡眠周期内体温变化规律：正常的睡眠结构周期分非快速眼动睡眠期(NREM)和快速眼动睡眠期(REM)。NREM与REM交替出现，交替一次称为一个睡眠周期，两种循环往复。不同睡眠周期内，由于新陈代谢功能的不同，人的呼吸、心率以及体温也会发生变化。</p>
+
+					<img src="../../img/help/heating_reservation.png" data-preview-src="" data-preview-group="1" alt="">
+				</li>
+			</ol>
+		</div>
+	</body>
+	<script src="../../../com/js/min/mui.min.js"></script>
+	<script src="../../../com/js/min/mui.zoom.js"></script>
+	<script src="../../../com/js/min/mui.previewimage.js"></script>
+	<script src="../../../com/js/other/data.js"></script>
+	<script src="../../../com/js/other/com.js"></script>
+	<script src="../../js/other/liliao.com.js"></script>
+	<script type="text/javascript">
+		NOW = LILIAO;
+		LILIAO.nav.id = 'liliao_help';
+		mui.plusReady(function() {
+			mui.previewImage && mui.previewImage();
+			COM.addHN(true, '加热预约', CONST_MENU.home);
+		});
+	</script>
+
+</html>

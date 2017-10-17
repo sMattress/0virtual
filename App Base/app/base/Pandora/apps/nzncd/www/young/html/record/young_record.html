@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>睡眠记录</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" href="../../../com/css/min/mui.min.css">
+		<link rel="stylesheet" href="../../../com/css/other/com.css">
+		<link rel="stylesheet" href="../../css/other/young.com.css">
+		<style>
+			#com_body {
+				position: relative;
+			}
+		</style>
+	</head>
+
+	<body id="body_id">
+		<div id="com_body">
+			<div class="y-box">
+				<div class="mui-content-padded" id="yr_search" style="text-align: center;">
+					<button method='prev' type="button" class="mui-btn mui-btn-link" style="float: left;">
+		           	 	<span class="mui-icon mui-icon-back"></span>
+		            	上一周
+		        	</button>
+					<button method='now' type="button" class="mui-btn mui-btn-link">
+		            	当前周
+		        	</button>
+					<button method='next' type="button" class="mui-btn mui-btn-link" style="float: right;">
+		            	下一周
+		           	 	<span class="mui-icon mui-icon-forward"></span>
+		        	</button>
+				</div>
+				<div id="yr_title"></div>
+			</div>
+			<div class="y-box">
+				<div id="yrb_none"></div>
+				<div class="yb-echarts" id="yr_efficiency">
+					<!-- 睡眠记录 通过_efficiencyPieChart生成 -->
+
+				</div>
+			</div>
+			<!--<div class="y-box">
+				<div class="yb-echarts" id="yr_heart_rate">
+				
+				</div>
+			</div>-->
+		</div>
+
+	</body>
+
+	<script src="../../../com/js/min/mui.min.js"></script>
+	<script src="../../../com/js/min/echarts.min.js"></script>
+	<script src="../../../com/js/min/mui.pullToRefresh.js"></script>
+	<script src="../../../com/js/other/data.js"></script>
+	<script src="../../../com/js/min/md5.js"></script>
+	<script src="../../../com/js/other/com.js"></script>
+	<script src="../../js/other/young.com.js"></script>
+
+	<script src="../../js/record/young.record.js"></script>
+	<script type="text/javascript">
+		NOW = YOUNG;
+		YOUNG.nav.id = 'young_record';
+		mui.plusReady(Y_RECORD.start);
+		if(!window.plus){
+//			Y_RECORD.start();
+		}
+	</script>
+</html>
