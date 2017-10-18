@@ -34,7 +34,7 @@ li {
 
 #yb_stage .mui-switch {
 	right: 0;
-	left: 75px;
+	left: 45px;
 }
 
 /*#yb_stage .mui-switch:before {
@@ -205,8 +205,13 @@ li {
 #heart_grid,#yrb_stage {
 	height: 300px;
 }
-
-
+#yb_stage_1,#yrb_stage_1{
+	height: 200px;
+}
+#yb_stage_none{
+	height: 50px;
+	line-height: 50px;
+}
 #yr_search{
 	border-bottom: 1px solid #c8c7cc;
 	margin: 4px 0;
@@ -267,7 +272,7 @@ li {
 }
 
 #y_monitor{
-	height: 150px;
+	height: 200px;
 }
 .ym-show-heart{
 	position: absolute;
@@ -317,4 +322,26 @@ li {
 .ym-show-state>span{
 	color: deepskyblue;
 	font-weight: bold;
+}
+
+.ym-mintor-time{
+	position: absolute;
+	width: 90%;
+	bottom: 0;
+	height: 60px;
+	line-height: 30px;
+}
+.ym-mintor-time>.ymmt{
+	display: block;
+	float: left;
+	width: 50%;
+	text-align: left;
+	height: 30px;
+}
+.ym-mintor-time>span{
+	display: block;
+	float: left;
+	width: 50%;
+	text-align: center;
+	height: 30px;
 }

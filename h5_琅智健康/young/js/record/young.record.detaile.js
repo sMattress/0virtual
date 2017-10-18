@@ -16,6 +16,7 @@ window.Y_RECORD_DETAILE = (function() {
 	var _stagePieChart = null; //睡眠状态 #yrb_stage
 	var _heartPieChart = null; //心率曲线图 #heart_grid
 	var _staticsPieChart = null; //睡眠分期图 #yrb_stage
+	var _stage1PieChart = null; //睡眠分期图 #yrb_stage_1
 	var _downElem = null; //下拉元素
 
 	//开始函数
@@ -36,10 +37,11 @@ window.Y_RECORD_DETAILE = (function() {
 			_id = COM.getStorage(STORAGE.oneSleepId);
 			_getSleepFullstage();
 		})
-//		_stageWidth = mui('#ys_box')[0].clientWidth;
+		//		_stageWidth = mui('#ys_box')[0].clientWidth;
 		_stagePieChart = echarts.init(mui('#yrb_stage')[0]);
 		_heartPieChart = echarts.init(mui('#heart_grid')[0]);
 		_staticsPieChart = echarts.init(mui('#yrb_statics')[0]);
+		_stage1PieChart = echarts.init(mui('#yrb_stage_1')[0]);
 	}
 	//绑定点击事件
 	var _bind = function() {
@@ -114,7 +116,7 @@ window.Y_RECORD_DETAILE = (function() {
 			console.log('_showSleepFullSatge===========');
 			if((obj.start_time + obj.start_time).indexOf('-') !== -1) {
 				throw '返回回来的时间带有-,ios不能解析带有-格式的日期字符串,字符串：' + (asleep_time + awake_time);
-			} 
+			}
 		}
 		_id = obj.id;
 		COM.setStorage(STORAGE.oneSleepId, _id);
@@ -130,69 +132,146 @@ window.Y_RECORD_DETAILE = (function() {
 		} else {
 			nowDate = asleepTimeDate.format('yyyy/MM/dd');
 		}
-		console.log('=nowDate===='+nowDate);
+		console.log('=nowDate====' + nowDate);
 
 		//显示睡眠效率
 		mui('#yrd_efficiency')[0].innerHTML = (obj.efficiency || 0) + '%';
-		if(obj.start_time){//上床时间
+		if(obj.start_time) { //上床时间
 			mui('#yrd_date>span')[2].innerHTML = nowDate;
-			mui('#yrd_start_time>span')[1].innerHTML =  new Date(obj.start_time).format('hh:mm');
-		}else{
+			mui('#yrd_start_time>span')[1].innerHTML = new Date(obj.start_time).format('hh:mm');
+		} else {
 			mui('#yrd_date>span')[2].innerHTML = "";
-			mui('#yrd_start_time>span')[1].innerHTML =  "";
+			mui('#yrd_start_time>span')[1].innerHTML = "";
 		}
-		if(obj.asleep_time){//入睡时间
-			mui('#yrd_asleep_time>span')[1].innerHTML =  new Date(obj.asleep_time).format('hh:mm');
-		}else{
+		if(obj.asleep_time) { //入睡时间
+			mui('#yrd_asleep_time>span')[1].innerHTML = new Date(obj.asleep_time).format('hh:mm');
+		} else {
 			mui('#yrd_asleep_time>span')[1].innerHTML = "";
 		}
-		if(obj.awake_time){//觉醒时间
-			mui('#yrd_awake_time>span')[1].innerHTML =  new Date(obj.awake_time).format('hh:mm');
-		}else{
-			mui('#yrd_awake_time>span')[1].innerHTML =  "";
+		if(obj.awake_time) { //觉醒时间
+			mui('#yrd_awake_time>span')[1].innerHTML = new Date(obj.awake_time).format('hh:mm');
+		} else {
+			mui('#yrd_awake_time>span')[1].innerHTML = "";
 		}
-		if(obj.end_time){//离床时间
-			mui('#yrd_end_time>span')[1].innerHTML =  new Date(obj.end_time).format('hh:mm');
-		}else{
-			mui('#yrd_end_time>span')[1].innerHTML =  "";
+		if(obj.end_time) { //离床时间
+			mui('#yrd_end_time>span')[1].innerHTML = new Date(obj.end_time).format('hh:mm');
+		} else {
+			mui('#yrd_end_time>span')[1].innerHTML = "";
 		}
-		if(DEBUG){
-			console.log('=start_time===='+obj.start_time);
-			console.log('=asleep_time===='+obj.asleep_time);
-			console.log('=awake_time===='+obj.awake_time);
-			console.log('=end_time===='+obj.end_time);
+		if(DEBUG) {
+			console.log('=start_time====' + obj.start_time);
+			console.log('=asleep_time====' + obj.asleep_time);
+			console.log('=awake_time====' + obj.awake_time);
+			console.log('=end_time====' + obj.end_time);
 		}
 		_showStage(obj.stage, start_time, end_time);
+		_showCurve(obj.mr_curve, start_time, end_time);
 		_showStatics(obj.statics, start_time, end_time);
 		_showHeartRate(obj.heart_rate, start_time, end_time);
 
-		var endStamp = new Date().getTime(); 
+		var endStamp = new Date().getTime();
 		console.log('_showSleepFullSatge运行时间' + (endStamp - startStamp) / 1000);
 		if(_downElem) {
 			_downElem.endPullDownToRefresh();
 			_downElem = null;
 		}
 	}
+
+	//#yrb_stage_1 体动表格
+	var _showCurve = function(mr_curve, start, end) {
+		if(DEBUG) console.log('_showCurve===========');
+		if(DEBUG) console.log('=mr_curve===='+mr_curve);
+		var xAxis = [];
+		var stageDataArr = [];
+
+		var startTimeStamp = new Date(start).getTime();
+		var nowTimeStamp = new Date(end).getTime();
+		var timeSplice = _oneMinuteStamp / 2;
+		var oldStage = "";
+		for(var i = 0; i < mr_curve.length; i++) {
+			var a = mr_curve[i];
+			var tmpTimeStamp = startTimeStamp + (i * timeSplice);
+			xAxis.push(new Date(tmpTimeStamp).format('hh:mm'));
+			if(a === '1' && oldStage !== a) {
+				stageDataArr.push(1);
+			} else {
+				stageDataArr.push(0);
+			}
+			oldStage = a;
+		}
+		if(DEBUG) console.log('=stageDataArr====' + JSON.stringify(stageDataArr));
+		if(DEBUG) console.log('=xAxis====' + JSON.stringify(xAxis));
+
+		var stageOption = {
+			title: {
+				text: '体动',
+				padding: [15, 0, 0, 15],
+				textStyle: {
+					color: '#000',
+					fontFamily: 'Helvetica Neue',
+					fontSize: 18
+				}
+			},
+//			color: '#FF7F00',
+			xAxis: {
+				type: 'category',
+				splitLine: {
+					show: true,
+					lineStyle: {
+						type: 'dashed'
+					}
+				},
+				data: xAxis
+			},
+			yAxis: {
+				type: 'value',
+				splitLine: {
+					show: true,
+					lineStyle: {
+						type: 'dashed'
+					}
+				},
+				interval: 1,
+				max: 2,
+				axisTick: {
+					show: false
+				},
+				axisLabel: {
+					formatter: function(value, index) {
+						return "";
+					}
+				},
+			},
+			series: [{
+				name: '体动数据',
+				type: 'line',
+				silent: true,
+				hoverAnimation: false,
+				data: stageDataArr
+			}]
+		};
+		_stage1PieChart.setOption(stageOption, false);
+	}
 	//#ys_box 睡眠数据展示
 	var _showStage = function(stage, start, end) {
 		if(DEBUG) console.log('_showStage===========');
 		if(DEBUG) console.log(stage);
-//		console.log(stage);
+		//		console.log(stage);
 		var xAxis = [];
 		var stageTmpArr = (stage || '').split(',');
 		var startStamp = new Date(start).getTime();
 		var timeSplice = _oneMinuteStamp / 2;
 		var max = 4000;
 		var min = 0;
-		var stageArr = []; 
+		var stageArr = [];
 		for(var i = 0; i < stageTmpArr.length - 1; i++) {
 			var tmpTimeStamp = startStamp + (i * timeSplice);
 			xAxis.push(new Date(tmpTimeStamp).format('hh:mm'));
 			var hi = parseInt(stageTmpArr[i] * 1000);
 			stageArr.push(hi);
 		}
-		if(DEBUG) console.log("=stageArr===="+JSON.stringify(stageArr));
-//		console.log("=stageArr===="+JSON.stringify(stageArr));
+		if(DEBUG) console.log("=stageArr====" + JSON.stringify(stageArr));
+		//		console.log("=stageArr===="+JSON.stringify(stageArr));
 		var stageOption = {
 			title: {
 				text: '睡眠状态图',
@@ -203,17 +282,11 @@ window.Y_RECORD_DETAILE = (function() {
 					fontSize: 18
 				}
 			},
-			color: '#FF7F00',
+			//			color: '#FF7F00',
 			xAxis: {
 				type: 'category',
 				axisTick: {
 					alignWithLabel: true
-				},
-				axisLine: {
-					onZero: false,
-					lineStyle: {
-						color: '#d14a61'
-					}
 				},
 				data: xAxis
 			},
@@ -233,24 +306,24 @@ window.Y_RECORD_DETAILE = (function() {
 						type: 'dashed'
 					}
 				},
-				axisTick:{
-					show:false
+				axisTick: {
+					show: false
 				},
 				axisLine: {
 					onZero: false
 				},
 				axisLabel: {
 					formatter: function(value, index) {
-						if(value >= 3500){
-							return "清醒";
-						}else if(value >= 2500){
-							return "中睡";
-						}else if(value >= 1500 ){
+						if(value >= 3500) {
+							return "觉醒";
+						} else if(value >= 2500) {
+							return "REM";
+						} else if(value >= 1500) {
 							return "浅睡";
-						}else if(value === 0){
-							return "深睡";
-						}else{
+						} else if(value === 0) {
 							return "";
+						} else {
+							return "深睡";
 						}
 					}
 				},
@@ -332,7 +405,7 @@ window.Y_RECORD_DETAILE = (function() {
 	//显示心率数据
 	var _showHeartRate = function(heart_rate, start, end) {
 		if(DEBUG) console.log('_showHeartRate============');
-		if(DEBUG) console.log("=heart_rate===="+heart_rate); 
+		if(DEBUG) console.log("=heart_rate====" + heart_rate);
 		var xAxis = [];
 		heart_rate = heart_rate || '';
 		heartRate = heart_rate.split(',');
@@ -340,7 +413,7 @@ window.Y_RECORD_DETAILE = (function() {
 		var timeSplice = _oneMinuteStamp / 2;
 		var max = 0;
 		var min = 1000;
-		var heartArr = []; 
+		var heartArr = [];
 		for(var i = 0; i < heartRate.length - 1; i++) {
 			var tmpTimeStamp = startStamp + (i * timeSplice);
 			xAxis.push(new Date(tmpTimeStamp).format('hh:mm'));
@@ -351,9 +424,9 @@ window.Y_RECORD_DETAILE = (function() {
 			}
 			if(hi < min) {
 				min = hi;
-			} 
+			}
 		}
-		if(DEBUG) console.log("=heartArr===="+JSON.stringify(heartArr));
+		if(DEBUG) console.log("=heartArr====" + JSON.stringify(heartArr));
 		if(max === 0) {
 			max = 100;
 		}

@@ -808,3 +808,22 @@ html {
 	height: 40px;
 }
 
+#wifi_pwd_box{
+	
+}
+
+#wifi_pwd_box .daa-select{
+	height: 40px;
+	margin-bottom: 15px;
+}
+#wifi_pwd_box .daa-select>span{
+
+	font-size: 16px;
+	color: #8f8f94;
+}
+#wifi_pwd_box .daa-select>select{
+	width:165px;
+	margin-bottom: 0;
+	border: 1px solid rgba(0,0,0,.2) !important;
+	padding: 5px 15px;
+}

@@ -710,9 +710,13 @@ COM.ajax = function(obj) {
 			error: function(xhr, type, errorThrown) {
 				//console.log('获取网址：' + url + ' 失败');
 				//console.log('错误原因:' + ERR_OBJ[type]);
-				COM.closeLoading();
 				if(DEBUG) console.log('==== COM.ajax请求出错;type===>' + type); 
-				if(type === 'timeout') {
+				COM.closeLoading();
+				if(error){
+					error(xhr, type, errorThrown, obj);
+				}else if(errorText){
+					mui.toast(errorText);
+				}else if(type === 'timeout') {
 					if(!AlertFlag){
 						AlertFlag = true;
 						mui.alert('请求超时,请确认网络是否可用', '提示' ,function(){
@@ -726,10 +730,7 @@ COM.ajax = function(obj) {
 							AlertFlag = false;
 						});
 					}
-				} else {
-					errorText && mui.toast(errorText);
 				}
-				error && error(xhr, type, errorThrown, obj);
 			}
 		});
 	} catch(e) {

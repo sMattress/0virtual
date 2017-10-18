@@ -42,11 +42,11 @@ window.DEBUG = false;
  * 存储当前版本数据
  */
 window.VERSION = {}; //版本数据
-VERSION.value = 0; //版本值 与showCode对应
+VERSION.value = 112; //版本值 与showCode对应
 VERSION.device_type = 'lzjk';//琅智健康
 VERSION.name = '1.0.0'; //版本号 
 VERSION.liliao = '2.0';//理疗的版本号
-VERSION.showCode = '1.0.0';
+VERSION.showCode = '1.1.2';
 
 /**
  * 存储缓存到本地的key 没在此元素的缓存键值禁止缓存
@@ -108,7 +108,7 @@ CONSTANT.navId = 'com_nav'; //底部元素的导航id
 CONSTANT.popoverId = 'com_popover'; //弹出菜单 id 此值请勿改变 与css挂钩
 CONSTANT.loadingId = 'com_loading'; //正在加载 id 此值请勿改变 与css挂钩
 CONSTANT.qrcodeId = 'com_qrcode'; //二维码  id 此值请勿改变 与css挂钩
-CONSTANT.confirmBtn = [ '取消','确认']; //mui.confirm的按钮
+CONSTANT.confirmBtn = ['取消','确认']; //mui.confirm的按钮
 CONSTANT.confirmSure = 1; //此值对应上方“确认”的下标
 CONSTANT.ssid = 'lesmarthome';//硬件wifi名
 //CONSTANT.ssid = 'test1';//硬件wifi名

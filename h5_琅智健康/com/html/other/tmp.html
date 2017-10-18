@@ -49,6 +49,7 @@
 		
 		if(DEBUG) console.log('==========调用 tmp.html');
 		mui.plusReady(function() {
+
 				var token = COM.getStorage(STORAGE.token);
 				if(DEBUG) console.log('=token===='+token);
 				if(token) { //如果已经登录过 则通过获取用户信息来校验token是否有效,有效则跳转set.html
@@ -56,6 +57,7 @@
 				} else {
 					COM.openWindow("LR");
 				}
+
 			mui('#com_body').pullToRefresh({
 				down: {
 					callback: function() {

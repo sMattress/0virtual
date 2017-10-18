@@ -11,6 +11,9 @@ DEVICE.start = function() {
 			return true;
 		}
 	});
+	COM.back(function(){
+		COM.openWindow('home','',true);
+	});
 	COM.addReload(function(){
 		DEVICE.getDeviceList(DEVICE.createList);
 	});
@@ -46,11 +49,7 @@ DEVICE.createList = function(boxDoc) {
 			+ obj.alias +'</em><i class="right-arrow"></i></li>';
 		}
 	}else{
-		var tmpIndex = 'device_add_android';
-		if(mui.os.ios){//ios版
-			tmpIndex = "device_add_ios";
-		}
-		html = '<li>暂无设备,点击<a class="elem-click" index="'+tmpIndex+'">配置新设备</a>前往添加</li>';
+		html = '<li>暂无设备,点击<a class="elem-click" index="device_add">配置新设备</a>前往添加</li>';
 	}
 	
 	boxDoc.innerHTML = html;
@@ -207,11 +206,7 @@ DEVICE.bindAddClick = function() {
 		var t = this.getAttribute("title");
 		console.log("deviceMana ==> a 已点击");
 		if(t === "new") {
-			if(mui.os.ios){//ios版
-				COM.openWindow("device_add_ios",undefined,true);
-			}else{
-				COM.openWindow("device_add_android",undefined,true);
-			}	
+			COM.openWindow("device_add",undefined,true);
 		} else {
 			//添加设备函数
 			var _bindDevice = function(type, deviceCode, file) {

@@ -28,11 +28,7 @@ window.HOME = (function(){
 				+ obj.alias +'</em><i class="right-arrow"></i></li>';
 			}
 		}else{
-			var tmpIndex = 'device_add_android';
-			if(mui.os.ios){//ios版
-				COM.openWindow("device_add_ios",undefined,true);
-			}
-			html = '<li>暂无设备,点击<a class="elem-click" index="'+tmpIndex+'">配置新设备</a>前往添加</li>';
+			html = '<li>暂无设备,点击<a class="elem-click" index="device_add">配置新设备</a>前往添加</li>';
 		}
 		mui('#home_device ul')[0].innerHTML = html;
 	}

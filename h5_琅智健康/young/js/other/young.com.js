@@ -28,7 +28,7 @@ Y_COM.sleepOverState = {
 	
 	'1': ['深睡眠', 'sleeping','77a9ae'] ,
 	'2': ['浅睡眠', 'waking','c35652'],
-	'3': ['快速眼动', 'movement','9dc6b3'],
+	'3': ['REM', 'movement','9dc6b3'],
 	'4': ['觉醒', 'leaving','51626e']
 }
 
