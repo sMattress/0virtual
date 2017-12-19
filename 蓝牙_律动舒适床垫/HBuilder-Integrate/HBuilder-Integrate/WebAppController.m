@@ -30,6 +30,7 @@ static UIView* pContentVIew = nil;
     if(pContentVIew == nil)
         pContentVIew = [[UIView alloc] initWithFrame:self.view.bounds];
     [self.view addSubview: pContentVIew];
+    self.view.backgroundColor = [UIColor colorWithCSS:@"#B8B4BD"];
     
     PDRCore *h5Engine = [PDRCore Instance];
     [self setStatusBarStyle:h5Engine.settings.statusBarStyle];

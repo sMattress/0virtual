@@ -41,7 +41,9 @@
         // 用户在集成5+SDK时，需要在5+内核初始化时设置当前的集成方式，
         // 请参考AppDelegate.m文件的- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions方法
         
-        CGRect StRect = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height);
+        int YPos = self.navigationController.navigationBar.frame.size.height+ [UIApplication sharedApplication].statusBarFrame.size.height;
+        
+        CGRect StRect = CGRectMake(0, YPos, self.view.frame.size.width, (self.view.frame.size.height - YPos));
         
         appFrame = [[PDRCoreAppFrame alloc] initWithName:@"WebViewID1" loadURL:pFilePath frame:StRect];
         if (appFrame) {

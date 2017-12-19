@@ -1,0 +1,36 @@
+init_blue_ios //生成ios插件函数
+
+
+init //初始化
+getBlueState //获取蓝牙状态
+	blueState取值：
+		2 蓝牙不可用
+		4 蓝牙未开启
+		5 蓝牙已开启
+getBlueList //获取蓝牙列表 返回json字符串
+    '[{"name":"USER-101","address":"蓝牙唯一标识符"}]'
+searchDevice //开始搜索
+stopSearch //停止搜索
+createService //连接蓝牙  传入蓝牙地址
+disconnect //断开连接蓝牙
+getContState //获取蓝牙连接状态
+	蓝牙连接状态:
+		0  初始状态
+		1  正在连接
+		2  连接成功并开始扫描服务
+		3  正在扫描服务
+		4  扫描到想要的服务
+		5  正在扫描服务下读写功能
+		6  扫描到蓝牙 读 功能
+		7  扫描到蓝牙 写 功能
+		8  读写功能都已扫描完毕
+		-96 扫描服务下的读写功能发生错误
+		-97 扫描服务发生错误
+		-98 连接失败
+		-99 断开连接
+sendInfo //写入数据到蓝牙 
+getBlueInfo //定时获取蓝牙返回信息 存入 readTxt 中
+readInfo //返回readTxt的值
+
+
+

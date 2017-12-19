@@ -29,10 +29,10 @@
     
     // 设置当前SDK运行模式
     // 使用WebApp集成是使用的启动参数
-    return [PDRCore initEngineWihtOptions:launchOptions withRunMode:PDRCoreRunModeAppClient];
+    //return [PDRCore initEngineWihtOptions:launchOptions withRunMode:PDRCoreRunModeAppClient];
     
     // 使用WebView集成时使用的启动参数
-    // return [PDRCore initEngineWihtOptions:launchOptions withRunMode:PDRCoreRunModeWebviewClient];
+    return [PDRCore initEngineWihtOptions:launchOptions withRunMode:PDRCoreRunModeWebviewClient];
 }
 
 // IOS 9 以下这句会报错，请升级xcode到最新或者删除此代码

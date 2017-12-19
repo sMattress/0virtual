@@ -27,6 +27,10 @@
     };
     var proto = TabBar.prototype;
 
+    proto.refresh = function() {
+        this.itemElems = [].slice.call(document.querySelectorAll('.' + this.itemClass));
+    };
+
     proto.handleOldVersion = function() {
         var list = this.list;
         if (!list.length) {
@@ -98,7 +102,7 @@
                     }
                     self.highlight(index);
                     var id = plus.runtime.appid;
-                    wap2app.switchTab(id, id + '_' + index);
+                    wap2app.switchTab(id, id + '_' + index, url);
                 }
             }
         });

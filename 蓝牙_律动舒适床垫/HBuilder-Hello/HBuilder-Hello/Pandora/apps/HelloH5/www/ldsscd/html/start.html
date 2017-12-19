@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>律动舒适床垫 android 启动页面</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" href="../css/mui.min.css">
+		<style>
+			body {
+				background: url(../img/start.png) no-repeat;
+				background-size: cover;
+			}
+		</style>
+	</head>
+
+	<body id="body_id" class="set-body">
+
+	</body>
+	<script src="../js/mui.min.js"></script>
+
+	<script type="text/javascript">
+		mui.plusReady(function() {
+			var upFlag = false;
+			if(!mui.os.ios) {
+				var obj = {
+					url: 'http://www.lesmarthome.com/v1/sys/apps/update',
+					type: "GET",
+					sign: false,
+					async: false,
+					data: {
+						"version_code": parseInt(plus.runtime.version.replace('.','').replace('.','')),
+						"version_name": plus.runtime.version,
+						"device_type": 'qd',
+						"appid": plus.runtime.appid,
+						"version": plus.runtime.version,
+						"imei": plus.device.imei
+					},
+					success: function(data) {
+						if(DEBUG) console.log("" + JSON.stringify(data));
+						if(data && data.flag) {
+							upFlag = true;
+							var obj = data.params[0];
+							var latest = obj.latest;
+							if(latest.version_code >  VERSION.value) {
+								mui.alert('版本已更新到' + latest.version_name,'消息提示','马上更新',function(){
+									plus.runtime.openURL(obj.download);
+								});
+							}
+						}
+					}
+				}
+				COM.ajax(obj);
+			}
+
+			if(upFlag) {
+				return;
+			}
+			COM.openWindow('blue_ctrl');
+//			COM.openWindow('android_ctrl');
+		});
+	</script>
+
+</html>

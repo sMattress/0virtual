@@ -2,20 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>BlueCenter</key>
-	<dict>
-		<key>class</key>
-		<string>BlueCenter</string>
-		<key>global</key>
-		<false/>
-	</dict>
-	<key>Finger</key>
-	<dict>
-		<key>global</key>
-		<false/>
-		<key>class</key>
-		<string>Finger</string>
-	</dict>
 	<key>Geolocation</key>
 	<dict>
 		<key>class</key>

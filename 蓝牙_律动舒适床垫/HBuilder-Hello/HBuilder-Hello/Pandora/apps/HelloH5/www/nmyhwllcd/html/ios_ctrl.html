@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>智能理疗床垫 IOS 蓝牙控制</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" href="../css/mui.min.css">
+		<style>
+			#com_body:after {
+				display: none;
+			}
+		</style>
+	</head>
+
+	<body id="body_id" class="set-body">
+		<header id="header" class="mui-bar mui-bar-nav">
+			<a id="go_back" class="mui-icon mui-pull-left mui-icon-left-nav" style="display: none;"></a>
+			<h1 class="mui-title">纳米远红外理疗床垫</h1>
+			<button class="mui-btn mui-btn-blue mui-btn-link mui-pull-right">帮助</button>
+		</header>
+		<div id="blue_search" style="display: ;"> 
+			<div id="bs_box" class="bs_before"> 
+				<span>BLE 设备</span>
+				<div id="bss_search" class="bss_btn"></div>
+				<div class="bss_bg"></div>
+				<div class="bss_circle"></div>
+				<div id="bbs_info" class="bbs_info">
+					
+				</div>
+			</div>
+			<ul id="bs_devices" class="bs_devices">
+				<!-- -->
+				暂无设备，点击<a>扫描</a>开始获取设备
+				<!--<li address="123">
+					<div class="bds-name">设备：USER-101</div>
+					<div class="bds-nick"><span>备注：未设置</span>
+						<i></i>
+					</div> 
+					<div class="bds-ctrl"></div>
+				</li>-->
+			</ul>
+		</div>
+		<div id="blue_ctrl" style="display: none;">
+			<div class="bc-box">
+				<div id="liliao-ctrl">
+					<ul id="lc_info" class="lc-info com-width blue-clear">
+						<li>
+							<span id="l_t">获取中</span>
+							<p id="l_s">获取中</p>
+						</li>
+						<li>
+							<span id="r_t">获取中</span>
+							<p id="r_s">获取中</p>
+						</li>
+					</ul>
+					<ul id="lc_btn">
+						<li class="lcb-lt" title="0" v="1">
+							<span>左温度</span>
+							<span class="span-cc">+</span>
+						</li>
+						<li class="lcb-rt" title="1" v="1">
+							<span>右温度</span>
+							<span class="span-cc">+</span>
+						</li>
+						<li class="lcb-lb" title="0" v="-1">
+							<span class="span-cc">-</span>
+							<span>左温度</span>
+						</li>
+						<li class="lcb-rb" title="1" v="-1">
+							<span class="span-cc">-</span>
+							<span>右温度</span>
+						</li>
+						<li class="lcb-cc0" title="2"></li>
+					</ul>
+					<ul id="lc_stage">
+						<li i='1' v='1' s='1'>左加热</li>
+						<li i='2' v='1' s='0'>右加热</li>
+						<li i='1' v='2' s='1'>左理疗</li>
+						<li i='2' v='2' s='0'>右理疗</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+        <div id="d_IOS_bug">
+            <button class="mui-btn-blue">清空</button>
+            <div id="d_console"></div>
+        </div>
+		<div id="loading-bg"></div>
+		<div id="loading" class="mui-progressbar mui-progressbar-infinite">
+			
+		</div>
+	</body>
+	<script src="../js/mui.min.js"></script>
+	<script src="../js/ios.ctrl.js"></script>
+	<script type="text/javascript">
+		mui.plusReady(start);
+		mui.init({
+			statusBarBackground: '#3d51b4',
+		});
+		if(!window.plus){
+//			_init();
+//			_bind(); 
+		}
+
+	</script>
+
+</html>

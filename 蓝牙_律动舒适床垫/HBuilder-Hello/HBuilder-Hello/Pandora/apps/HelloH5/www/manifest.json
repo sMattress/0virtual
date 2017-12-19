@@ -1,7 +1,7 @@
 {
     "@platforms": ["android", "iPhone", "iPad"],
-    "id": "com.blue.zncd",
-    "name": "蓝牙测试",
+    "id": "HelloH5",
+    "name": "气动蓝牙",
     "version": {
         "name": "1.0.0",
         "code": "1"
@@ -10,7 +10,7 @@
     "icons": {
         "72": "icon.png"
     },
-    "launch_path": "html/ios_ctrl.html",
+    "launch_path": "ldsscd/html/blue_ctrl.html",
     "developer": {
         "name": "",
         "email": "",
@@ -65,16 +65,16 @@
         
         
         "Webview":{
-        	"description": "窗口管理"
+            "description": "窗口管理"
         },
         "NativeUI":{
-        	"description": "原生UI控件"
+            "description": "原生UI控件"
         },
         "Navigator":{
-        	"description": "浏览器信息"
+            "description": "浏览器信息"
         },
         "NativeObj":{
-        	"description": "原生对象"
+            "description": "原生对象"
         }
     },
     "plus": {
@@ -82,6 +82,10 @@
             "autoclose": true,
             "waiting": true
         },
+        "statusbar": {
+			"style": "light",
+			"immersed": true
+		},
         "popGesture": "close",
         "runmode": "normal",
         "signature": "Sk9JTiBVUyBtYWlsdG86aHIyMDEzQGRjbG91ZC5pbw==",
@@ -100,8 +104,8 @@
                 "keystore": "",
                 "password": "",
                 "aliasname": "",
-               "permissions": ["<uses-permission android:name=\"android.permission.READ_PHONE_STATE\"/>","<uses-permission android:name=\"android.permission.VIBRATE\"/>","<uses-permission android:name=\"android.permission.WAKE_LOCK\"/>","<uses-permission android:name=\"android.permission.CALL_PHONE\"/>","<uses-permission android:name=\"android.permission.ACCESS_WIFI_STATE\"/>","<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\"/>","<uses-permission android:name=\"android.permission.WRITE_SETTINGS\"/>"]
-				
+                "permissions": ["<uses-permission android:name=\"android.permission.READ_PHONE_STATE\"/>","<uses-permission android:name=\"android.permission.VIBRATE\"/>","<uses-permission android:name=\"android.permission.WAKE_LOCK\"/>","<uses-permission android:name=\"android.permission.CALL_PHONE\"/>","<uses-permission android:name=\"android.permission.ACCESS_WIFI_STATE\"/>","<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\"/>","<uses-permission android:name=\"android.permission.WRITE_SETTINGS\"/>"]
+                
             },
             "orientation": ["portrait-primary","portrait-secondary"],
             "icons": {
@@ -112,13 +116,13 @@
                         "normal": "",
                         "retina": "",
                         "retina7": "",
-			"retina8": "",
+                        "retina8": "",
                         "spotlight-normal": "",
                         "spotlight-retina": "",
                         "spotlight-retina7": "",
                         "settings-normal": "",
                         "settings-retina": "",
-			"settings-retina8": ""
+                        "settings-retina8": ""
                     },
                     "ipad": {
                         "normal": "",
@@ -172,48 +176,77 @@
             }
         }
     },
-	"dependencies": {
-		"pages": {
-			"bluestacks/html/blue_ctrl.html": {
-				"resources": [
-					"bluestacks/css/mui.min.css",
-					"bluestacks/img/refresh.png",
-					"bluestacks/js/blue.ctrl.js",
-					"bluestacks/js/mui.min.js",
-					"bluestacks/img/search.png",
-					"bluestacks/css/mui.ttf",
-					"bluestacks/img/icon-ctrl.png",
-					"bluestacks/img/edit.png",
-					"bluestacks/img/blue.png"
-				],
-				"refer": [],
-				"priority": 0
-			}
-		},
-		"idle": {
-			"resources": [
-				"com/js/other/data.js",
-				"com/img/other/LR_logo.png",
-				"com/js/min/mui.pullToRefresh.min.js",
-				"com/js/min/mui.pullToRefresh.js",
-				"bluestacks/js/blue.android.js",
-				"bluestacks/js/android.ctrl.js",
-				"com/js/other/com.js",
-				"com/css/other/com.css",
-				"bluestacks/html/android_ctrl.html",
-				"bluestacks/html/ios_ctrl.html",
-				"bluestacks/js/blue.ios.js",
-				"com/js/min/mui.picker.min.js",
-				"bluestacks/img/loading.png",
-				"com/fonts/mui.ttf",
-				"com/js/min/mui.poppicker.min.js",
-				"com/css/min/mui.min.css",
-				"com/img/other/home.png",
-				"com/js/min/mui.min.js",
-				"com/js/min/mui.poppicker.js",
-				"com/css/min/mui.picker.min.css",
-				"com/img/other/com_bg.png"
-			]
-		}
-	}
+    "dependencies": {
+        "pages": {
+            "bluestacks/html/blue_ctrl.html": {
+                "resources": [
+                              "bluestacks/css/mui.min.css",
+                              "bluestacks/img/refresh.png",
+                              "bluestacks/js/blue.ctrl.js",
+                              "bluestacks/js/mui.min.js",
+                              "bluestacks/img/search.png",
+                              "bluestacks/css/mui.ttf",
+                              "bluestacks/img/icon-ctrl.png",
+                              "bluestacks/img/edit.png",
+                              "bluestacks/img/blue.png"
+                              ],
+                "refer": [],
+                "priority": 0
+            },
+            "html/android_ctrl.html": {
+                "resources": [
+                              "img/search.png",
+                              "css/mui.ttf",
+                              "js/android.ctrl.js",
+                              "js/mui.min.js",
+                              "css/mui.min.css",
+                              "img/icon-ctrl.png",
+                              "img/blue.png",
+                              "img/edit.png"
+                              ],
+                "refer": [
+                          "html/help.html"
+                          ],
+                "priority": 0
+            },
+            "html/help.html": {
+                "resources": [
+                              "css/mui.ttf",
+                              "img/24.jpg",
+                              "img/23.jpg",
+                              "js/mui.min.js",
+                              "img/21.jpg",
+                              "css/mui.min.css",
+                              "img/22.jpg"
+                              ],
+                "refer": [],
+                "priority": 0
+            }
+        },
+        "idle": {
+            "resources": [
+                          "com/js/other/data.js",
+                          "com/img/other/LR_logo.png",
+                          "com/js/min/mui.pullToRefresh.min.js",
+                          "com/js/min/mui.pullToRefresh.js",
+                          "bluestacks/js/blue.android.js",
+                          "bluestacks/js/android.ctrl.js",
+                          "com/js/other/com.js",
+                          "com/css/other/com.css",
+                          "bluestacks/html/android_ctrl.html",
+                          "bluestacks/html/ios_ctrl.html",
+                          "bluestacks/js/blue.ios.js",
+                          "com/js/min/mui.picker.min.js",
+                          "bluestacks/img/loading.png",
+                          "com/fonts/mui.ttf",
+                          "com/js/min/mui.poppicker.min.js",
+                          "com/css/min/mui.min.css",
+                          "com/img/other/home.png",
+                          "com/js/min/mui.min.js",
+                          "com/js/min/mui.poppicker.js",
+                          "com/css/min/mui.picker.min.css",
+                          "com/img/other/com_bg.png"
+                          ]
+        }
+    }
 }
